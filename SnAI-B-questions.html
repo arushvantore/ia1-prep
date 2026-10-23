@@ -1,0 +1,6343 @@
+<!doctype html><html><head><meta charset='utf-8'><title>SnAI-B-questions</title><style>
+body{font-family:-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:10.5pt;
+line-height:1.45;color:#16181d;margin:0;padding:26px 30px;}
+h1.doc-title{font-size:20pt;margin:0 0 8px;}
+h2{font-size:15pt;color:#0b3d91;margin-top:8px;border-bottom:2px solid #0b3d91;
+padding-bottom:4px;page-break-after:avoid;}
+h3{font-size:12pt;margin:14px 0 6px;page-break-after:avoid;}
+hr{border:0;border-top:1px solid #ccc;margin:16px 0;}
+ul{margin:4px 0 10px 18px;padding:0}
+li{margin:3px 0;word-wrap:break-word}
+p{margin:5px 0}
+p.gap{margin:0;min-height:2px}
+pre{background:#f4f6f8;border:1px solid #dfe3e8;border-radius:6px;
+padding:9px 11px;font-size:8.8pt;white-space:pre-wrap;word-wrap:break-word;
+font-family:'SF Mono',Menlo,Consolas,monospace;page-break-inside:avoid;}
+code{background:#eef1f4;border-radius:3px;padding:0 3px;font-size:9.5pt;
+font-family:'SF Mono',Menlo,Consolas,monospace;}
+@page{size:A4;margin:14mm 12mm 16mm;}
+@media print{body{font-size:9.3pt} h2{page-break-before:always}
+h2:first-of-type{page-break-before:avoid} pre{font-size:7.8pt}}
+</style></head><body><h1 class='doc-title'>EVERY SnAI-B question (portal, till now)</h1>
+<p>Generated: 2026-10-24T01:57:36 by <code>scrape.py --export SnAI</code></p>
+<p class='gap'></p>
+<p>For the AI tutor: teach these in due-date order. Status and</p>
+<p>XP are the student&#x27;s real portal state. Question text is</p>
+<p>included in a code block wherever the tracker captured it;</p>
+<p>questions without text are listed at the end.</p>
+<p class='gap'></p>
+</section><hr>
+<section><h2>CLI File &amp; Directory Management, CLI Package Management, CLI Flags, Options &amp; Op ...  [Post Class]  — due 2026-09-15 18:05</h2>
+<p class='gap'></p>
+<h3>Advanced File Management — 40/40 XP — SOLVED — deadline 2026-09-15 18:05</h3>
+<p>Topics: CLI File &amp; Directory Management</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/74blhrfcuwmj">https://my.newtonschool.co/playground/code/74blhrfcuwmj</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Advanced File Management
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Advanced File Management
+
+Medium
+
+2x
+
+40/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are helping your team clean up and organize project files. 
+
+
+
+Steps to follow:
+
+
+
+Create a folder called project-files.
+
+
+
+Inside it, create three files:
+
+
+
+report.docx
+
+
+
+summary.docx
+
+
+
+draft.docx
+
+
+
+Make a copy of report.docx and name it report_backup.docx.
+
+
+
+Create a new folder called old. Move draft.docx into old/.
+
+
+
+Rename summary.docx to final_summary.docx.
+
+
+
+Copy final_summary.docx into the old/ folder as well.
+
+
+
+Delete report_backup.docx.
+
+
+
+Final structure should look like this:
+
+
+
+project-files/
+
+├── report.docx
+
+├── final_summary.docx
+
+└── old/
+
+    ├── draft.docx
+
+    └── final_summary.docx
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Create a Project Folder Structure — 40/40 XP — SOLVED — deadline 2026-09-15 18:05</h3>
+<p>Topics: Command-Line Interface (CLI), CLI File &amp; Directory Management</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/l3u71naqswpk">https://my.newtonschool.co/playground/code/l3u71naqswpk</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Create a Project Folder Structure
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Create a Project Folder Structure
+
+Medium
+
+2x
+
+40/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You have recently joined a backend team that develops services for an e-commerce platform.
+
+
+
+To ensure consistency across projects, the team uses an internal command called create-service to generate the standard structure for new API services.
+
+
+
+During the onboarding of several new developers, the team noticed that newly generated services are missing important files and some directories are named incorrectly.
+
+
+
+The engineering manager asks you to investigate and repair the scaffold generator before the next batch of services is created.
+
+
+
+Tasks:
+
+Locate the create-service command.
+
+Inspect the script used by the command.
+
+Fix all issues in the script.
+
+Ensure the command can be executed.
+
+Run the command to generate a new service.
+
+
+
+Expected Service Structure:
+
+service/
+
+├── controllers/
+
+├── models/
+
+├── routes/
+
+├── middleware/
+
+├── server.js
+
+└── README.md
+
+
+
+
+
+Expected README Content:
+
+API Service
+
+
+
+
+
+Expected server.js Content:
+
+console.log(&quot;Server started&quot;);
+
+
+
+
+
+Requirements:
+
+Directory names must exactly match the expected structure.
+
+The middleware directory must be present.
+
+README.md must exist inside the service directory.
+
+server.js must exist inside the service directory.
+
+The contents of README.md must exactly match the expected text.
+
+The contents of server.js must exactly match the expected text.
+
+The command should execute successfully after your fixes.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Recover the Emergency Access Token — 40/40 XP — SOLVED — deadline 2026-09-15 18:05</h3>
+<p>Topics: Command-Line Interface (CLI), CLI File &amp; Directory Management</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/7252j93o5izb">https://my.newtonschool.co/playground/code/7252j93o5izb</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Recover the Emergency Access Token
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Recover the Emergency Access Token
+
+Medium
+
+2x
+
+40/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are assisting the Site Reliability Engineering (SRE) team during a production incident.
+
+
+
+An emergency access token is required to restore a critical service. The token was intentionally stored somewhere inside a deeply nested backup directory structure for security reasons.
+
+
+
+The backup system has created many nested folders containing many files. Most of these files are not readable due to permission restrictions.
+
+
+
+The SRE team remembers only one thing:
+
+
+
+The emergency token is stored in the only readable text file within the backup directory tree.
+
+
+
+Your task is to locate the readable file, inspect its contents, and recover the token.
+
+
+
+Tasks:
+
+Explore the directory structure.
+
+Find the readable file inside the backup directory tree.
+
+Create a file named token.txt in the current directory containing only the token value.
+
+
+
+Example Token Format:
+
+ACCESS_TOKEN_VALUE=abc123xyz789
+
+
+
+
+
+Expected Output File:
+
+abc123xyz789
+
+
+
+
+
+Requirements:
+
+Do not modify any existing files.
+
+token.txt must contain only the token value.
+
+No additional text or whitespace should be present.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Locate and Extract the Recovery Key — 40/40 XP — SOLVED — deadline 2026-09-15 18:05</h3>
+<p>Topics: Command-Line Interface (CLI), CLI File &amp; Directory Management</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/n8l45pooo4km">https://my.newtonschool.co/playground/code/n8l45pooo4km</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Locate and Extract the Recovery Key
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Locate and Extract the Recovery Key
+
+Medium
+
+2x
+
+40/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+A production server experienced a critical failure overnight. Before shutting down, the backup system created multiple backup folders and scattered diagnostic files across them.
+
+
+
+Your team needs to restore access, but the recovery key was saved in only one backup file. The file name and location are unknown.
+
+
+
+Search through the backup directory tree, find the recovery key, and save only the key value (without RECOVERY_KEY=) into a file named key.txt in the current directory.
+
+
+
+Task:
+
+
+
+Locate the recovery key hidden somewhere inside the backups directory.
+
+Extract only the recovery key value.
+
+Save the key value into a file named key.txt in the current directory.
+
+
+
+For example, if a file contains:
+
+
+
+RECOVERY_KEY=7fK92mXqL8pR3vNz
+
+
+
+then key.txt should contain:
+
+
+
+7fK92mXqL8pR3vNz
+
+
+
+The recovery key may be located in any file within the backups directory tree.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+</section><hr>
+<section><h2>S&amp;AI Contest 1 (Coding) - SVYASA  [Contest]  — due 2026-09-25 12:30</h2>
+<p class='gap'></p>
+<h3>Detective Shubham: The Hidden Network — 0/40 XP — NOT SOLVED — deadline 2026-09-25 12:30</h3>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/z3twplcreddo">https://my.newtonschool.co/playground/code/z3twplcreddo</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Detective Shubham: The Hidden Network
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+Try AI Plan Mode
+
+QUESTION
+
+Detective Shubham: The Hidden Network
+
+Easy
+
+0/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are playing the role of Detective Shubham, a cyber investigator.
+
+
+
+You have received information about a secret digital operation.
+
+The entire operation follows a strict folder structure, and your job is to recreate it exactly using Linux CLI commands only.
+
+
+
+You are currently inside the box/ directory.
+
+
+
+Your Mission Steps :-
+
+
+
+Step 1
+
+Create a main folder named: OperationX
+
+This folder will act as the control center.
+
+
+
+Step 2
+
+Move inside the OperationX folder.
+
+
+
+Step 3
+
+Inside OperationX, create three folders:
+
+intel
+
+agents
+
+logs
+
+
+
+Step 4
+
+Inside the intel folder, create two folders:
+
+documents
+
+images
+
+
+
+Step 5
+
+Inside the agents folder, create three folders:
+
+alpha
+
+bravo
+
+charlie
+
+
+
+Step 6
+
+Inside the logs folder, create two folders:
+
+system
+
+security
+
+
+
+
+
+Expected Final Folder Structure
+
+OperationX
+
+├── intel
+
+│   ├── documents
+
+│   └── images
+
+├── agents
+
+│   ├── alpha
+
+│   ├── bravo
+
+│   └── charlie
+
+└── logs
+
+    ├── system
+
+    └── security
+
+Input
+
+na
+
+Output
+
+na
+
+Constraints
+
+na
+
+Example
+
+na
+
+</pre>
+<p class='gap'></p>
+<h3>New Recruit — 40/40 XP — SOLVED — deadline 2026-09-25 12:30</h3>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/lbr0104oudhx">https://my.newtonschool.co/playground/code/lbr0104oudhx</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+New Recruit
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+Try AI Plan Mode
+
+QUESTION
+
+New Recruit
+
+Easy
+
+2x
+
+40/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are playing the role of a new recruit at a Company.
+
+
+
+Before you can access any real case files, you must set up your personal workspace exactly the way the agency requires — using Linux CLI commands only.
+
+
+
+You are currently inside the box/ directory.
+
+
+
+Your Mission Steps:
+
+
+
+Step 1
+
+Create a main folder named: MyWorkspace
+
+
+
+Step 2
+
+Move inside the MyWorkspace folder.
+
+
+
+Step 3
+
+Inside MyWorkspace, create two folders:
+
+
+
+notes
+
+tasks
+
+
+
+Step 4
+
+Inside the notes folder, create an empty file named: day1.txt
+
+
+
+Expected Final Folder Structure
+
+
+
+MyWorkspace
+
+├── notes
+
+│   └── day1.txt
+
+└── tasks
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>A Digital Investigator — 0/80 XP — NOT SOLVED — deadline 2026-09-25 12:30</h3>
+<p>Topics: CLI File &amp; Directory Management</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/m4k7nv37p1an">https://my.newtonschool.co/playground/code/m4k7nv37p1an</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+A Digital Investigator
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+A Digital Investigator
+
+Medium
+
+0/80
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are playing the role of Detective Senorita, a digital investigator.
+
+
+
+You’ve just received an encrypted folder named CaseFiles from an anonymous source.
+
+
+
+Your task is to organize the evidence, record your findings, and prepare a quick summary report — using Linux commands only.
+
+
+
+Your Mission Steps
+
+Create a new folder named CaseFiles.
+
+Move inside the CaseFiles folder.
+
+Inside this folder, create three empty files:
+
+suspects.txt
+
+evidence.txt
+
+summary.txt
+
+Add the following lines to suspects.txt, one line at a time without overwriting previous content:
+
+John - Seen near crime scene
+
+Maya - Works at nearby cafe
+
+Raj - Security guard on duty
+
+Add the following lines to evidence.txt, one line at a time without overwriting previous content:
+
+CCTV footage found
+
+Fingerprints on glass
+
+Combine suspects.txt and evidence.txt into summary.txt. The suspects must appear first, followed by the evidence.
+
+Display the contents of summary.txt.
+
+Expected Final Report
+
+John - Seen near crime scene
+
+Maya - Works at nearby cafe
+
+Raj - Security guard on duty
+
+CCTV footage found
+
+Fingerprints on glass
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>CID — 0/120 XP — NOT SOLVED — deadline 2026-09-25 12:30</h3>
+<p>Topics: CLI File &amp; Directory Management</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/5ehlciw97nbc">https://my.newtonschool.co/playground/code/5ehlciw97nbc</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+CID
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+CID
+
+Hard
+
+0/120
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are playing the role of a CID wrapping up a compromised operation.
+
+
+
+The old operation folder OldBase contains leftover, disorganized files from a previous mission. Your job is to inspect, reorganize, rename, back up, and clean up the entire structure using Linux CLI commands only — exactly as instructed. This mission tests every command in your toolkit.
+
+
+
+You are currently inside the box/ directory, and OldBase/ already exists with the following starting structure:
+
+
+
+OldBase
+
+├── draft.txt        (contains the text: TOP SECRET)
+
+├── temp
+
+│   └── junk.txt
+
+└── old_logs
+
+    └── log1.txt
+
+
+
+Your Mission Steps:
+
+
+
+Step 1
+
+Create a new main folder named: NewBase
+
+
+
+Step 2
+
+Move inside the NewBase folder.
+
+
+
+Step 3
+
+Inside NewBase, create three folders:
+
+
+
+reports
+
+archive
+
+backup
+
+
+
+Step 4
+
+Move back OUT of NewBase (using cd ..) so you&#x27;re inside box/ again and print working directory.
+
+
+
+Step 5
+
+Copy the file OldBase/draft.txt into NewBase/reports/ (keep the same filename).
+
+
+
+Step 6
+
+Move (rename) NewBase/reports/draft.txt to NewBase/reports/final_report.txt.
+
+
+
+Step 7
+
+Add a new line of text — MISSION COMPLETE — to the end of NewBase/reports/final_report.txt without deleting its existing content.
+
+
+
+Step 8
+
+Display the contents of NewBase/reports/final_report.txt in the terminal to confirm it now contains BOTH lines.
+
+
+
+Step 9
+
+Move the entire OldBase/old_logs folder into NewBase/backup/.
+
+
+
+Step 10
+
+Delete the file OldBase/temp/junk.txt (the file only, not the folder).
+
+
+
+Step 11
+
+Delete the now-empty OldBase/temp folder using the command meant for removing empty directories.
+
+
+
+Step 12
+
+Delete the entire OldBase folder and everything remaining inside it in a single command.
+
+
+
+Expected Final Folder Structure
+
+
+
+NewBase
+
+├── reports
+
+│   └── final_report.txt   (contains: TOP SECRET \n MISSION COMPLETE)
+
+├── archive
+
+└── backup
+
+    └── old_logs
+
+        └── log1.txt
+
+
+
+(OldBase should no longer exist at all.)
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Mr. Robot — 0/120 XP — NOT SOLVED — deadline 2026-09-25 12:30</h3>
+<p>Topics: CLI File &amp; Directory Management</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/0o52fr5gg4nk">https://my.newtonschool.co/playground/code/0o52fr5gg4nk</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Mr. Robot
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Mr. Robot
+
+Hard
+
+0/120
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are playing the role of a Mr. Robot closing out a classified operation known as Mirage.
+
+
+
+Nothing about this operation is straightforward — every file has a decoy, every path has a twist, and one wrong move will corrupt the evidence. Follow the mission exactly.
+
+
+
+You are currently inside the box/ directory, and MirageBase/ already exists with the following starting structure:
+
+
+
+MirageBase
+
+├── vault
+
+│   └── secret.txt        (contains: CODE ALPHA)
+
+├── decoys
+
+│   ├── decoy1.txt
+
+│   └── decoy2.txt
+
+└── archive
+
+    └── old.txt            (contains: ARCHIVE DATA)
+
+
+
+Your Mission Steps:
+
+
+
+Step 1
+
+Create a new folder named: Mirage
+
+
+
+Step 2
+
+Move inside the Mirage folder.
+
+
+
+Step 3
+
+Inside Mirage, create three folders:
+
+
+
+vault_copy
+
+confirmed
+
+discarded
+
+
+
+Step 4
+
+Move inside the vault_copy folder.
+
+
+
+Step 5
+
+From here, copy MirageBase/vault/secret.txt into your current folder (vault_copy), keeping the same filename. ⚠️ Remember — you are now two folders deep, so a plain ../ won&#x27;t reach box/.
+
+
+
+Step 6
+
+Add a new line — VERIFIED — to the end of the secret.txt now sitting in vault_copy. ⚠️ The original content (CODE ALPHA) must still be there afterward. One wrong symbol here will silently destroy it.
+
+
+
+Step 7
+
+Display the contents of this secret.txt in the terminal to confirm both lines are present.
+
+
+
+Step 8
+
+Move back out of vault_copy, and then out of Mirage, so that you are back inside box/ — using cd .. twice, not any shortcut.
+
+
+
+Step 9
+
+Confirm your current location using the appropriate command.
+
+
+
+Step 10
+
+Move (not copy) MirageBase/archive/old.txt into Mirage/confirmed/.
+
+
+
+Step 11
+
+Delete the two files inside MirageBase/decoys — decoy1.txt and decoy2.txt — one at a time.
+
+
+
+Step 12
+
+Now remove the MirageBase/decoys folder using the command meant strictly for empty directories. ⚠️ If you try this before Step 11 is fully done, it will refuse to work — that&#x27;s the point.
+
+
+
+Step 13
+
+Finally, delete the entire MirageBase folder — which still contains the original vault/secret.txt you never removed, plus an now-empty archive folder — in a single command.
+
+
+
+Expected Final Folder Structure
+
+
+
+Mirage
+
+├── vault_copy
+
+│   └── secret.txt      (contains: CODE ALPHA \n VERIFIED)
+
+├── confirmed
+
+│   └── old.txt          (contains: ARCHIVE DATA)
+
+└── discarded             (empty)
+
+
+
+(MirageBase should no longer exist anywhere.)
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+</section><hr>
+<section><h2>Operating System, Filesystem Management, File Ownership and Permissions, PATH, O ...  [Post Class]  — due 2026-09-27 16:00</h2>
+<p class='gap'></p>
+<h3>Audit Trail Setup — 10/20 XP — SOLVED — deadline 2026-09-27 16:00</h3>
+<p>Topics: Chmod, File Ownership and Permissions</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/eu8eoa3cnihv">https://my.newtonschool.co/playground/code/eu8eoa3cnihv</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Audit Trail Setup
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Audit Trail Setup
+
+Easy
+
+10/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are given the following folder structure inside the current directory.
+
+
+
+audit_trail/
+
+└── access.log
+
+
+
+Perform the following operations:
+
+
+
+Change the permissions of the audit_trail/ directory so that the owner has full access (read, write, execute), the group has read and execute only, and others have no access at all.
+
+Inside audit_trail/, create a new file named summary.txt containing the exact text Audit Summary Generated.
+
+Set the permissions of summary.txt so that the owner can read and write, the group can only read, and others have no access.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Three Levels of Access — 10/20 XP — SOLVED — deadline 2026-09-27 16:00</h3>
+<p>Topics: Chmod, File Ownership and Permissions</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/74dyuwbfq6i4">https://my.newtonschool.co/playground/code/74dyuwbfq6i4</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Three Levels of Access
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Three Levels of Access
+
+Easy
+
+10/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+After a security review, three files in the clearance directory were found with wide-open permissions. Each file must be tightened to a different clearance level using numeric chmod.
+
+
+
+Given Directory Structure:
+
+
+
+clearance/
+
+├── public.txt     
+
+├── team.txt      
+
+└── private.txt   
+
+
+
+Current Permissions:
+
+
+
+All three files: full permissions for everyone.
+
+
+
+Tasks to Complete:
+
+
+
+public.txt: owner can read and write; group and others can only read.
+
+team.txt: owner can read and write; group can only read; others get nothing.
+
+private.txt: owner can read and write; group and others get nothing.
+
+Do not modify the content of any file.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Deployment Project Permissions — 20/40 XP — SOLVED — deadline 2026-09-27 16:00</h3>
+<p>Topics: Chmod, File Ownership and Permissions</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/33n9tt9kovhd">https://my.newtonschool.co/playground/code/33n9tt9kovhd</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Deployment Project Permissions
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Deployment Project Permissions
+
+Medium
+
+20/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are preparing a shared deployment project where different roles (developers, CI system, general viewers) need different levels of access to different parts of the codebase. You need to set the correct permissions on each part of the project so it is accessed only as intended.
+
+
+
+Given Directory Structure:
+
+
+
+deployment/
+
+├── app/
+
+│   ├── server.py
+
+│   ├── handler.py
+
+│   └── settings.py
+
+├── datasets/
+
+│   ├── train.csv
+
+│   └── test.csv
+
+├── docs/
+
+│   └── OVERVIEW.md
+
+└── bin/
+
+    ├── start.sh
+
+    ├── stop.sh
+
+    └── healthcheck.sh
+
+
+
+All files currently have default permissions (644 for files, 755 for directories). Apply the following rules:
+
+
+
+Python source files (every .py file inside deployment/app/):
+
+
+
+Owner: read, write, execute
+
+Group: no access
+
+Others: no access
+
+The datasets/ directory, and every file inside it:
+
+Owner: read, write, execute
+
+Group: read, write, execute
+
+Others: no access
+
+docs/OVERVIEW.md:
+
+Owner: read, write
+
+Group: read only
+
+Others: read only
+
+Every shell script (every .sh file inside deployment/bin/):
+
+Owner: read, write, execute
+
+Group: read, execute (no write)
+
+Others: read, execute (no write)
+
+
+
+Deliverable: Write the chmod command(s) you would run, one rule at a time, to reach the end state described above. You may use wildcards (e.g. *.py) instead of listing files individually.
+
+
+
+Note: Run your commands from outside the deployment/ directory (i.e. paths should start with deployment/..., not be run from inside it).
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Purge the Locked Workspace — 20/40 XP — SOLVED — deadline 2026-09-27 16:00</h3>
+<p>Topics: Chmod, File Ownership and Permissions</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/23ga7xbyeihy">https://my.newtonschool.co/playground/code/23ga7xbyeihy</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Purge the Locked Workspace
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Purge the Locked Workspace
+
+Medium
+
+2x
+
+0/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+A corrupted draft is stuck inside a locked workspace. The draft itself is read-only, and the workspace directory has no write permission. Deleting a file requires write permission on the directory, not on the file. Delete the corrupted draft, create a clean replacement, and lock the workspace again.
+
+
+
+Given Directory Structure:
+
+
+
+workspace/     (Write access removed)
+
+├── old_draft.txt   (Read-only, corrupted)
+
+└── notes.txt
+
+
+
+Current Permissions:
+
+
+
+workspace/ directory: Write permission removed (chmod 555).
+
+old_draft.txt: Read-only for everyone (chmod 444).
+
+
+
+Tasks to Complete:
+
+
+
+Delete workspace/old_draft.txt.
+
+Create a new file workspace/final_draft.txt containing exactly Clean copy.
+
+Using chmod, set the permissions of final_draft.txt to read and write for user, read for group and no permissions for others.
+
+notes.txt must remain untouched.
+
+Restore workspace/ permissions to read and execute for user, group and others.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Data Breach Response — 0/60 XP — NOT SOLVED — deadline 2026-09-27 16:00</h3>
+<p>Topics: Cp, Mv, Chmod, File Ownership and Permissions</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/lkwqrg7jcc14">https://my.newtonschool.co/playground/code/lkwqrg7jcc14</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Data Breach Response
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Data Breach Response
+
+Hard
+
+2x
+
+0/60
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You have been tasked with handling Data Breach Response, a secure directory of evidence and reports from an active security incident. Some files and directories currently have restricted permissions that you must work around without permanently weakening security.
+
+
+
+Given Directory Structure:
+
+
+
+breach_response/
+
+├── evidence/
+
+│   └── log_dump.txt
+
+├── secure/
+
+├── reports/
+
+│   └── incident_summary.txt
+
+└── classified.txt
+
+
+
+
+
+Pre-existing Permissions:
+
+
+
+evidence/ directory — write permission removed (chmod 555)
+
+log_dump.txt — read-only (chmod 444)
+
+incident_summary.txt — read-only (chmod 444)
+
+classified.txt — no permissions (chmod 000)
+
+
+
+Actions to Perform:
+
+
+
+Copy a file into breach_response/:
+
+
+
+Copy evidence/log_dump.txt to breach_response/log_dump.txt.
+
+Move the restricted directory:
+
+Move the entire evidence/ directory into secure/, resulting in secure/evidence/.
+
+evidence/ currently has no write permission (555). Since moving a directory into a new parent requires updating its own metadata, you&#x27;ll need to temporarily add write permission to evidence/ before moving it.
+
+After the move, restore secure/evidence/ to permission 555.
+
+Edit the read-only report:
+
+Append the exact line Breach confirmed to reports/incident_summary.txt.
+
+incident_summary.txt currently has no write permission (444), so you&#x27;ll need to temporarily adjust permissions to edit it.
+
+Restore the file permissions to 444 afterward.
+
+Create a new report:
+
+Create secure/forensics_report.txt containing the exact text Forensics Complete.
+
+Set its permissions to 600.
+
+Append to the report again:
+
+Append the exact line Escalated to security team to reports/incident_summary.txt.
+
+As before, temporarily adjust permissions to write, then restore incident_summary.txt to 444 afterward.
+
+
+
+Important: Do not modify classified.txt. It must remain unchanged with permission 000.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+</section><hr>
+<section><h2>Computer Software, Compiler, Interpreter, Number Representation &amp; Data Encoding  [Post Class]  — due 2026-09-29 18:05</h2>
+<p class='gap'></p>
+<h3>Execute a Python Script Directly — 10/20 XP — SOLVED — deadline 2026-09-29 18:05</h3>
+<p>Topics: Interpreter</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/zdzrhay58r5t">https://my.newtonschool.co/playground/code/zdzrhay58r5t</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Execute a Python Script Directly
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Execute a Python Script Directly
+
+Easy
+
+10/20
+
+Time Limit: 2, Memory Limit: 128000
+
+A teammate has asked you to create a Python script that can be executed directly from the terminal without typing python3 before the filename.
+
+Create a file named hello.py that prints: Hello from Python
+
+Configure the script so that it can be executed directly from the terminal.
+
+Expected Result:
+
+Running the following command:
+
+./hello.py
+
+should display:
+
+Hello from Python
+
+Input
+
+NA
+
+Output
+
+Hello from Python
+
+Constraints
+
+The script must be named hello.py.
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Resolve the Issue with hello.py — 10/20 XP — SOLVED — deadline 2026-09-29 18:05</h3>
+<p>Topics: Interpreter</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/axl0qpre44oq">https://my.newtonschool.co/playground/code/axl0qpre44oq</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Resolve the Issue with hello.py
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Resolve the Issue with hello.py
+
+Easy
+
+10/20
+
+Time Limit: 2, Memory Limit: 128000
+
+A teammate has handed over a Python script named hello.py and says:
+
+&quot;The script works on my machine, but I can&#x27;t run it directly from the terminal on yours. Can you fix it?&quot;
+
+
+
+You are not allowed to modify the script itself. Investigate the problem and make the script executable so it can be run directly from the terminal. Running the following command:
+
+./hello.py
+
+should display:
+
+Hello from Python
+
+Input
+
+NA
+
+Output
+
+Hello from Python
+
+Constraints
+
+Do not modify the contents of hello.py.
+
+Run the script directly from the terminal using ./hello.py instead of invoking it through the Python interpreter.
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Simplify the Compilation Process — 10/20 XP — SOLVED — deadline 2026-09-29 18:05</h3>
+<p>Topics: Compiler</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/4k42t5ma5fc3">https://my.newtonschool.co/playground/code/4k42t5ma5fc3</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Simplify the Compilation Process
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Simplify the Compilation Process
+
+Easy
+
+10/20
+
+Time Limit: 2, Memory Limit: 128000
+
+Your team frequently compiles a C program before testing it. Instead of typing the compilation command every time, your manager wants a reusable build script.
+
+Create a shell script named build.sh that compiles hello.c into an executable named hello.
+
+The script should be executable and should automate the build process using terminal commands only.
+
+Expected Result
+
+After creating the script, run both of the following commands:
+
+./build.sh
+
+./hello
+
+The output should be:
+
+Hello from C
+
+Input
+
+NA
+
+Output
+
+Hello from C
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+</section><hr>
+<section><h2>Version Control, Repository, Git, Git Commands  [Post Class]  — due 2026-10-06 18:35</h2>
+<p class='gap'></p>
+<h3>Undo Incorrect Changes and Commit the Fix — 20/20 XP — SOLVED — deadline 2026-10-06 18:35</h3>
+<p>Topics: Git Commands, Git add, Git commit</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/bn4ab0f3usca">https://my.newtonschool.co/playground/code/bn4ab0f3usca</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Undo Incorrect Changes and Commit the Fix
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Undo Incorrect Changes and Commit the Fix
+
+Easy
+
+2x
+
+20/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You accidentally added the wrong line Wrong line to app.txt and have NOT staged it.
+
+
+
+Undo the unstaged change using git checkout.
+
+
+
+Then add the correct line Correct line to the end of app.txt as a new line, stage the file, and commit it with the message:
+
+
+
+Fix app content
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>A new team member sets up a repository — 20/20 XP — SOLVED — deadline 2026-10-06 18:35</h3>
+<p>Topics: Cd, Git, Git Commands, Git init, Git add, Git commit</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/37kjlfh777he">https://my.newtonschool.co/playground/code/37kjlfh777he</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+A new team member sets up a repository
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+A new team member sets up a repository
+
+Easy
+
+2x
+
+20/20
+
+Time Limit: 2, Memory Limit: 128000
+
+You joined a new project. The folder my-app already exists with a file app.py inside it. Navigate into my-app, initialize Git, stage everything, and make the first commit with message: Project setup
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Multiple File Commits and Commit History Review — 20/20 XP — SOLVED — deadline 2026-10-06 18:35</h3>
+<p>Topics: Git Commands, Git add, Git commit, Git log</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/3kt2aexvwinx">https://my.newtonschool.co/playground/code/3kt2aexvwinx</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Multiple File Commits and Commit History Review
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Multiple File Commits and Commit History Review
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+Repository is already initialized.
+
+
+
+The files header.html and footer.html already exist in the repository.
+
+
+
+Add some content to header.html, then stage and commit your changes with the message:
+
+
+
+Add header
+
+
+
+Next, add some content to footer.html, then stage and commit your changes with the message:
+
+
+
+Add footer
+
+
+
+Finally, run:
+
+
+
+git log --oneline
+
+
+
+to verify that both commits appear in the commit history.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Selective Staging with Multiple Commits and Log Review — 40/40 XP — SOLVED — deadline 2026-10-06 18:35</h3>
+<p>Topics: Git Commands, Git add, Git commit, Git log</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/6ljwbtbf4xcr">https://my.newtonschool.co/playground/code/6ljwbtbf4xcr</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Selective Staging with Multiple Commits and Log Review
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Selective Staging with Multiple Commits and Log Review
+
+Medium
+
+2x
+
+0/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+A Git repository is already initialized, and both README.md and main.py already exist.
+
+
+
+Add some content to README.md, stage only README.md, and commit it with the message:
+
+
+
+Update readme
+
+
+
+Then add some content to main.py, stage only main.py, and commit it with the message:
+
+
+
+Update main
+
+
+
+Finally, run:
+
+
+
+git log --oneline
+
+
+
+to view the commit history.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+</section><hr>
+<section><h2>GitHub, Remote Repository Management, GitHub Collaboration, Github Pull Requests  [Post Class]  — due 2026-10-11 17:00</h2>
+<p class='gap'></p>
+<h3>Clone and Verify Before Working — 0/20 XP — NOT SOLVED — deadline 2026-10-11 17:00</h3>
+<p>Topics: Git log, Git Pull, Git Clone, GitHub Collaboration</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/6582532yohso">https://my.newtonschool.co/playground/code/6582532yohso</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Clone and Verify Before Working
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Clone and Verify Before Working
+
+Easy
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+Before starting work on a shared project, your process is: clone https://github.com/org/inventory-system.git, navigate into inventory-system, verify the remote is set correctly, pull any latest changes (just to be safe), and check the commit log in compact format.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Full Team Collaboration Simulation — 0/40 XP — NOT SOLVED — deadline 2026-10-11 17:00</h3>
+<p>Topics: Git add, Git commit, Git log, Git Pull, Git Push, Git Clone, GitHub Collaboration</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/ex8k2ivitbin">https://my.newtonschool.co/playground/code/ex8k2ivitbin</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Full Team Collaboration Simulation
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Full Team Collaboration Simulation
+
+Medium
+
+0/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You&#x27;re picking up a teammate&#x27;s CRM project. Clone https://github.com/teamdev/crm-tool.git and cd into crm-tool. Someone may have pushed a last-minute commit right after you cloned, so run git pull to be safe.
+
+
+
+The cloned src/contacts.js and src/deals.js are empty stub files — write some real content into each before staging them (e.g. echo &quot;export const contacts = [];&quot; &gt; src/contacts.js). Do not commit until you have added content to both files.
+
+
+
+Stage only src/contacts.js and src/deals.js — never stage src/internal-notes.js or build/output.min.js. Commit with message Add CRM core modules. The remote is already set from the clone, so just push.
+
+
+
+Finally, run git log and git remote -v to confirm.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Collaborative Git Workflow Challenge — 0/40 XP — NOT SOLVED — deadline 2026-10-11 17:00</h3>
+<p>Topics: GitHub, Git, Git Pull, Git Push, GitHub Collaboration</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/i9yx66qyanbb">https://my.newtonschool.co/playground/code/i9yx66qyanbb</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Collaborative Git Workflow Challenge
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Collaborative Git Workflow Challenge
+
+Medium
+
+0/40
+
+Time Limit: 2, Memory Limit: 128000
+
+You are working on a collaborative project in the chat-app directory. Navigate into it. A remote repository is already configured. Then pull to check if there are any changes on remote or not.  Add content Resolved message issue in client.js, then stage and commit it using the commit message: &quot;fix: resolve message duplicate issue&quot;. Finally push your update to the remote repository.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>New Machine, Same Project — 0/40 XP — NOT SOLVED — deadline 2026-10-11 17:00</h3>
+<p>Topics: Git add, Git Pull, GitHub Collaboration</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/9it7iqcu91y9">https://my.newtonschool.co/playground/code/9it7iqcu91y9</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+New Machine, Same Project
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+New Machine, Same Project
+
+Medium
+
+0/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You just got a new laptop. Clone https://github.com/yourname/recipe-app.git. Navigate into recipe-app. Pull (to be safe).
+
+
+
+Add some content to app.js, db.js, and helpers/format.js. Do not commit until you have made changes to all three files. Then stage all three — but NOT helpers/debug.js.
+
+
+
+Commit with message Resume recipe app development. Push back.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+</section><hr>
+<section><h2>SVYASA - S&amp;AI Practice  [Other]  — due 2026-12-31 00:00</h2>
+<p class='gap'></p>
+<h3>Reorganizing the HR Folder Structure — 0/20 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: CLI File &amp; Directory Management, Cp, Mv, Rm</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/u9neqiv40vde">https://my.newtonschool.co/playground/code/u9neqiv40vde</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Reorganizing the HR Folder Structure
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Reorganizing the HR Folder Structure
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+Kartik has just joined a new company as a data analyst. However, on his first day, his manager asks him to help the HR team organise their folder structure. Kartik’s task is to reorganise the HR team&#x27;s existing folder hierarchy according to the instructions provided by the manager.
+
+
+
+Kartik must work with various terminal commands to complete this task.
+
+
+
+Kartik begins with the following folder structure inside the 
+
+
+
+home directory:
+
+
+
+home
+
+
+
+    ├── employees/
+
+
+
+    │    ├── john_doe/
+
+
+
+    │    │    ├── profile.txt
+
+
+
+    │    │    └── contract.txt
+
+
+
+    │    ├── jane_smith/
+
+
+
+    │    │    ├── profile.txt
+
+
+
+    │    │    └── contract.txt
+
+
+
+    ├── temp_documents/
+
+
+
+    │    └── guidelines.txt
+
+
+
+    ├── management/
+
+
+
+    │    └── confidential.txt
+
+
+
+    ├── to_process/
+
+
+
+    └── completed/
+
+
+
+ 
+
+
+
+Kartik&#x27;s manager gives him the following tasks to reorganise the structure:
+
+
+
+The files inside the employees/ directory are not named properly. The manager wants Kartik to rename the contract.txt files to match the employee&#x27;s name for better organization. Rename john_doe/contract.txt to john_doe/john_contract.txt. Rename jane_smith/contract.txt to jane_smith/jane_contract.txt.
+
+There is no backup folder in the current HR structure. Kartik needs to create a backup/ directory right under the home/ folder and copy the entire management/ folder (along with its files) into this new backup directory.
+
+Kartik needs to create a file in the to_process/ directory that contains some text for the team to process later. Create a file named tasks.txt inside the to_process/ folder and add the following content: Organize all employee records and ensure contracts are securely stored.
+
+The management/confidential.txt file contains sensitive information, and it should only be accessed by the owner (the HR manager). Kartik needs to change the file permissions so that only the owner can read and write to it, and no other users should have access to it.
+
+The temp_documents/ folder is no longer needed. Kartik needs to remove the entire folder and its contents. 
+
+ 
+
+Help Kartik shine in his new job by completing these tasks for him.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>ClientVault Reorganization — 0/60 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: Cp, Chmod</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/hjqj3xta292m">https://my.newtonschool.co/playground/code/hjqj3xta292m</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+ClientVault Reorganization
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+ClientVault Reorganization
+
+Hard
+
+2x
+
+0/60
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You have been tasked with reorganizing ClientVault, a secure directory holding sensitive client files. The folder structure is already in place, but some files and directories currently have restricted permissions. Your job is to copy, move, and update files while respecting (and correctly restoring) those permissions.
+
+
+
+Given Directory Structure:
+
+
+
+client_vault/
+
+├── originals/
+
+│   └── contract.pdf
+
+├── staging/
+
+├── audit/
+
+│   └── access.log
+
+└── notes.txt
+
+
+
+Pre-existing Permissions:
+
+
+
+originals/ directory — write permission removed (chmod 555)
+
+contract.pdf — read-only (chmod 444)
+
+access.log — write permission removed (chmod 444)
+
+notes.txt — read permission removed (chmod 000)
+
+
+
+Actions to Perform:
+
+
+
+Copy a file into client_vault/:
+
+
+
+Copy contract.pdf from originals/ into client_vault/ (result: client_vault/contract.pdf).
+
+Move a restricted directory:
+
+Move the entire originals/ directory into staging/ (result: staging/originals/, containing contract.pdf).
+
+originals/ currently has no write permission (555). Since moving a directory into a new parent requires updating its own metadata, you&#x27;ll need to temporarily add write permission to originals/ before moving it.
+
+After the move, staging/originals/ must be restored to 555.
+
+Edit a read-only log file:
+
+Append the exact line Client data reviewed to audit/access.log.
+
+access.log currently has no write permission (444), so you&#x27;ll need to temporarily adjust permissions to edit it.
+
+After appending, restore access.log to 444.
+
+Create a new report file:
+
+Inside staging/, create a new file named staging_report.txt.
+
+Its content should be exactly: Staging Review Complete.
+
+Set its permissions to 600 (owner: read+write; group: no access; others: no access).
+
+Append to the log file a second time:
+
+Append the exact line Second review complete to audit/access.log.
+
+As before, temporarily adjust permissions to write, then restore access.log to 444 afterward.
+
+
+
+Important: notes.txt is not part of any task above. Do not touch it — at the end of the task it must still be exactly as it started, with permissions 000.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Directory Manager — 0/20 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: CLI File &amp; Directory Management</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/1kkb4fj7k0f5">https://my.newtonschool.co/playground/code/1kkb4fj7k0f5</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Directory Manager
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Directory Manager
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+You have been assigned the task of setting up the directory structure for a new project. The project requires the following directory hierarchy:
+
+
+
+project/
+
+├── src/
+
+│   ├── components/
+
+│   ├── services/
+
+│   └── utils/
+
+├── tests/
+
+│   ├── unit/
+
+│   └── integration/
+
+└── docs/
+
+    ├── api/
+
+    └── guides/
+
+ 
+
+
+
+Your task is to create this entire directory structure using a single mkdir command. Ensure that all directories are created in one go, without needing to navigate into each parent directory.
+
+
+
+Example : To create multiple nested directories, you can utilise this command format 
+
+mkdir -p /var/www/html/project/{css,js,images}
+
+This piece of code created the following directory structure : 
+
+
+
+/var/www/html/project/
+
+                    ├── css
+
+                    ├── js
+
+                    └── images
+
+
+
+Write the mkdir command you would use to accomplish this.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Directory cleaning — 0/20 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: Rm, CLI Flags, Options &amp; Operators</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/aiuy5ec8md92">https://my.newtonschool.co/playground/code/aiuy5ec8md92</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Directory cleaning
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Directory cleaning
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are managing a project directory that has accumulated unnecessary files and directories over time. Your task is to clean up the directory by removing specific files and folders that are no longer needed.
+
+
+
+Given the following directory structure:
+
+
+
+project/
+
+├── src/
+
+│   ├── old_components/
+
+│   ├── temp. txt
+
+│   └── services/
+
+├── tests/
+
+│   ├── old_tests/
+
+│   ├── unit/
+
+│   └── integration/
+
+├── docs/
+
+│   ├── old_api/
+
+│   ├── api/
+
+│   └── guides/
+
+└── README. md
+
+ 
+
+
+
+You need to remove the following:
+
+
+
+The entire old_components directory inside src/.
+
+The temp. txt file inside src/.
+
+The entire old_tests directory inside tests/.
+
+The entire old_api directory inside docs/.
+
+
+
+Write the rm command(s) you would use to accomplish this task.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Important files — 0/20 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: CLI File &amp; Directory Management, Cp</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/7refpfus5inr">https://my.newtonschool.co/playground/code/7refpfus5inr</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Important files
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Important files
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+You are working on a project where you need to back up important files to a separate backup directory. The project directory has the following structure:
+
+
+
+project/
+
+├── src/
+
+│   ├── main.py
+
+│   ├── utils.py
+
+│   └── config/
+
+│       └── settings.py
+
+├── data/
+
+│   ├── input.csv
+
+│   └── output.csv
+
+├── docs/
+
+│   ├── README.md
+
+│   └── requirements.txt
+
+└── scripts/
+
+    ├── deploy.sh
+
+    └── test.sh
+
+
+
+Your task is to:
+
+
+
+Copy the entire src/ directory (including all its contents) to a backup directory named backup/ (backup directory will be created outside project directory).
+
+Copy the docs/README.md file and scripts/deploy.sh file to the backup/ directory.
+
+Ensure that the directory structure in backup/ mirrors the structure in project/, so the backup/ directory should look like this after the operation:
+
+backup/
+
+├── src/
+
+│   ├── main.py
+
+│   ├── utils.py
+
+│   └── config/
+
+│       └── settings.py
+
+├── README.md
+
+└── deploy.sh
+
+
+
+Write the cp commands you would use to accomplish this task.
+
+
+
+Note:
+
+Make sure you are outside the backup directory before running the code.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>The Internship Application Folder — 0/20 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: Command-Line Interface (CLI)</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/6pvubbu0attm">https://my.newtonschool.co/playground/code/6pvubbu0attm</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+The Internship Application Folder
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+The Internship Application Folder
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are preparing to apply for a summer internship. Your resume and application documents are scattered across the current directory, making them difficult to manage.
+
+
+
+Organize your application documents into a dedicated folder while keeping the original resume in the current directory.
+
+
+
+Tasks:
+
+
+
+Perform the following steps in the current directory:
+
+
+
+Create a directory named Internship.
+
+Copy resume.pdf into Internship, keeping the original file unchanged in the current directory.
+
+Move cover_letter.txt into Internship.
+
+Rename hobbies.txt to personal_interests.txt in the current directory.
+
+Create an empty file named checklist.txt inside Internship.
+
+
+
+Starting Structure:
+
+├── resume.pdf
+
+├── cover_letter.txt
+
+└── hobbies.txt
+
+
+
+
+
+Expected Structure:
+
+├── resume.pdf
+
+├── personal_interests.txt
+
+└── Internship/
+
+    ├── resume.pdf
+
+    ├── cover_letter.txt
+
+    └── checklist.txt
+
+
+
+
+
+Requirements:
+
+The original resume.pdf must remain in the current directory, and its copy must exist inside Internship.
+
+cover_letter.txt must exist only inside Internship.
+
+hobbies.txt must be renamed to personal_interests.txt, preserving its contents.
+
+checklist.txt must be an empty file.
+
+Do not delete or modify the contents of the original files.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Giving Permissions — 0/20 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: CLI Permission Management, Command-Line Interface (CLI), Chmod</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/ajn5zihq8dhr">https://my.newtonschool.co/playground/code/ajn5zihq8dhr</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Giving Permissions
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Giving Permissions
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are working on a shared project where multiple users have different roles and permissions. You need to set the correct permissions on various files and directories to ensure that they are accessed only as intended.
+
+
+
+The project directory structure is as follows:
+
+
+
+project/
+
+├── src/
+
+│   ├── main.py
+
+│   ├── utils.py
+
+│   └── config.py
+
+├── data/
+
+│   ├── input_data.csv
+
+│   └── output_data.csv
+
+├── docs/
+
+│   └── README.md
+
+└── scripts/
+
+    ├── run.sh
+
+    ├── deploy.sh
+
+    └── test.sh
+
+
+
+ 
+
+
+
+Your tasks are:
+
+
+
+Ensure that all Python files in the src/ directory (.py files) are executable only by the file owner. To play it safe, also provide read and write permissions for the owner.
+
+Make the data/ directory and its contents are readable, writable, and executable by the owner and the group, but not accessible by others.
+
+Make README.md readable by everyone but writable only by the owner.
+
+Make all the script files in the scripts/ directory (.sh files) readable and executable by everyone but writable only by the owner.
+
+
+
+Write the chmod commands you would use to accomplish these tasks.
+
+
+
+
+
+Note:
+
+Make sure that you are outside the project directory before running the code.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>The Missing Project Credentials — 0/40 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: Command-Line Interface (CLI)</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/hy35jexzlhnf">https://my.newtonschool.co/playground/code/hy35jexzlhnf</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+The Missing Project Credentials
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+The Missing Project Credentials
+
+Medium
+
+2x
+
+0/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are setting up a web application for a college event. The application cannot connect to its database because the required database credentials are missing from the output file.
+
+
+
+Your teammate tells you:
+
+
+
+&quot;The database password is stored in a hidden file somewhere inside the EventApp project. Find the file containing the database password and copy its contents into a new file in the project directory.&quot;
+
+
+
+For example, if the hidden file contains:
+
+
+
+DB_PASSWORD=EvT_x9Kp!7m 
+
+
+
+The output file should contain the same line:
+
+
+
+DB_PASSWORD=EvT_x9Kp!7m 
+
+
+
+The EventApp directory already exists and contains multiple files and subdirectories. The credentials file is hidden and may be located inside a nested directory.
+
+
+
+Note: The DB_PASSWORD value in the hidden credentials file is dynamically generated and may differ across test cases. Do not hardcode the password.
+
+
+
+Tasks:
+
+
+
+
+
+Perform the following steps:
+
+
+
+Navigate into the EventApp directory and inspect its contents, including hidden files and subdirectories.
+
+Locate and inspect the hidden credentials file containing the DB_PASSWORD entry.
+
+Create a file named db_password.txt directly inside EventApp, containing the complete DB_PASSWORD entry (key and its value) exactly as it appears in the source file.
+
+Requirements:
+
+
+
+The password must be retrieved dynamically from the existing credentials file.
+
+Do not hardcode the example password.
+
+Do not modify or delete any existing files.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Project Cleanup &amp; Backup — 0/60 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: Command-Line Interface (CLI)</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/3zr8ema6bu2t">https://my.newtonschool.co/playground/code/3zr8ema6bu2t</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Project Cleanup &amp; Backup
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Project Cleanup &amp; Backup
+
+Hard
+
+2x
+
+0/60
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are organizing a project directory before submission. The Project directory contains source code, documentation, assets, temporary files, and a hidden configuration directory.
+
+
+
+Your task is to create a backup of the required files, organize the documentation, and clean up the project while preserving the specified original files.
+
+
+
+Initial Directory Structure:
+
+Project/
+
+├── src/
+
+│   ├── app.py
+
+│   └── old_app.py
+
+├── docs/
+
+│   ├── setup.txt
+
+│   └── usage.txt
+
+├── assets/
+
+│   └── logo.png
+
+├── draft.txt
+
+├── temp.txt
+
+└── .config/
+
+    └── version.txt
+
+
+
+Tasks:
+
+
+
+Perform the following steps inside the Project directory:
+
+
+
+Create an empty file named index.txt in the Project directory.
+
+Create a directory named Backup and copy the entire src directory into it, preserving both files and their contents.
+
+Move logo.png from assets into Backup.
+
+Inspect the hidden files and directories inside Project. Locate the hidden configuration directory, find version.txt inside it, and copy the file into the root Project directory.
+
+Rename draft.txt to README.txt and move it into Backup.
+
+Combine the contents of docs/setup.txt and docs/usage.txt, in that order, into a file documentation.txt inside Backup folder. Preserve the contents of both files.
+
+Append Backup completed as a new line at the end of Backup/documentation.txt.
+
+Delete old_app.py from the original src directory and delete temp.txt.
+
+Remove the assets and docs directories after handling their contents.
+
+Create an empty file named backup.log inside Backup folder.
+
+
+
+Expected Directory Structure:
+
+Project/
+
+├── index.txt
+
+├── version.txt
+
+├── src/
+
+│   └── app.py
+
+├── .config/
+
+│   └── version.txt
+
+└── Backup/
+
+    ├── src/
+
+    │   ├── app.py
+
+    │   └── old_app.py
+
+    ├── logo.png
+
+    ├── README.txt
+
+    ├── documentation.txt
+
+    └── backup.log
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>The Daily Study Tracker — 0/20 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: Command-Line Interface (CLI)</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/ge5mztr0qaz1">https://my.newtonschool.co/playground/code/ge5mztr0qaz1</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+The Daily Study Tracker
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+The Daily Study Tracker
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are maintaining a daily study tracker for your Systems &amp; AI Essentials course. Your current directory contains two files: study.txt, which stores your completed study sessions, and temp.txt, which contains your latest study entries.
+
+
+
+Combine the new entries with your existing tracker, remove the temporary file, and organize the tracker into a separate directory.
+
+
+
+Tasks:
+
+
+
+Perform the following steps in the current directory:
+
+
+
+Append the contents of temp.txt into study.txt, preserving the existing entries.
+
+Delete temp.txt after appending its contents.
+
+Create a directory named StudyNotes.
+
+Move study.txt into the StudyNotes directory.
+
+
+
+Initial Directory Structure:
+
+├── study.txt
+
+└── temp.txt
+
+Expected Directory Structure:
+
+└── StudyNotes/
+
+    └── study.txt
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Create a Private Diary — 0/20 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: Chmod, File Ownership and Permissions</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/8ccpzg9bgesh">https://my.newtonschool.co/playground/code/8ccpzg9bgesh</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Create a Private Diary
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Create a Private Diary
+
+Easy
+
+10/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You want a personal space on a shared machine where nobody else can read your notes. You will create the file yourself and lock it down using chmod.
+
+
+
+Scenario:
+
+
+
+There is no existing structure. You must build everything from scratch in your current directory.
+
+
+
+Tasks to Complete:
+
+
+
+Create a directory called personal_space.
+
+Inside it, create a file called diary.txt containing exactly the text Top Secret Entry.
+
+Using chmod, set the permissions of diary.txt so that only the owner can read and write it. Group and others must have no permissions at all.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Archiving a Release Directory — 0/40 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: Command-Line Interface (CLI), Mkdir, Cp, Mv, Rm</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/2i80v5xjienl">https://my.newtonschool.co/playground/code/2i80v5xjienl</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Archiving a Release Directory
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Archiving a Release Directory
+
+Medium
+
+2x
+
+40/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are given the following directory structure:
+
+
+
+release/
+
+├── app.js
+
+├── config.json
+
+└── README.md
+
+
+
+Requirements
+
+Create a directory named archive.
+
+Copy the entire release directory into archive.
+
+Rename the copied directory from release to release_v1.
+
+Remove the original release directory.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Organize and Review Study Notes — 0/20 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: Command-Line Interface (CLI), Cat</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/06s0kttczaaf">https://my.newtonschool.co/playground/code/06s0kttczaaf</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Organize and Review Study Notes
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Organize and Review Study Notes
+
+Easy
+
+2x
+
+20/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You want to organize your study notes for different subjects and quickly review them from the terminal.
+
+
+
+notes/
+
+├── linux/
+
+│ └── notes.txt
+
+├── git/
+
+│ └── notes.txt
+
+└── javascript/
+
+    └── notes.txt
+
+
+
+Task
+
+Add a heading to each notes.txt file:
+
+Linux Notes in linux/notes.txt
+
+Git Notes in git/notes.txt
+
+JavaScript Notes in javascript/notes.txt
+
+Append the content of all notes files in notes/final.txt.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Project Treasure Hunt — 0/20 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: Touch, CLI File &amp; Directory Management, Mkdir</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/ay3epjwefy0v">https://my.newtonschool.co/playground/code/ay3epjwefy0v</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Project Treasure Hunt
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Project Treasure Hunt
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+You receive a mysterious envelope containing an old map and a cryptic note hinting at buried treasures. Following the map leads you to a computer terminal, where you must navigate a directory to uncover the next clue.
+
+
+
+Folder structure: 
+
+
+
+home/user/treasure_hunt
+
+├── clues
+
+│   ├── first_clue.txt
+
+│   └── second_clue.txt
+
+├── history
+
+│   ├── year_2000
+
+│   │   └── event.txt
+
+│   └── year_1990
+
+└── notes
+
+    └── secrets.txt
+
+ 
+
+Task Instructions:
+
+Navigate to the treasure_hunt directory located inside the user directory in the home directory.
+
+Inside the history folder, create a new directory named year_1980.
+
+Inside the clues folder, create a new empty text file named third_clue.txt.
+
+Inside the notes folder, create two new empty text files: reminder.txt and next_step.txt.
+
+Use relevant terminal-based commands to complete the tasks.
+
+ 
+
+
+
+Note:
+
+
+
+Get rid of all the debugging code at last to have the test cases passed.
+
+
+
+ 
+
+Input
+
+NA
+
+Output
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>ProjectNST — 0/20 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: CLI File &amp; Directory Management</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/2zj9bqg1m4u4">https://my.newtonschool.co/playground/code/2zj9bqg1m4u4</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+ProjectNST
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+ProjectNST
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You have just joined a new software development team, and your first task is to add a new project called Capstone_Project to the workspace ProjectNST.
+
+
+
+The existing folder structure is:
+
+
+
+ProjectNST
+
+│
+
+├── Dev_Project
+
+│
+
+├── Portfolio
+
+│
+
+└── WindowSwap
+
+    └── README.txt
+
+
+
+
+
+The lead developer gives you the following responsibilities:
+
+
+
+Add the Project: Start by creating a directory named Capstone_Project for the project inside the ProjectNST workspace so all files can be neatly stored.
+
+Provide Documentation: The team requires every project folder to include a README.txt file with a brief description.
+
+Include README.txt file inside each project -&gt; Portfolio, Dev_Project, and Capstone_Project. The text inside README.txt must be according to the project, in the given format, ProjectName Documentation. Eg: for Project Portfolio, README.txt file must contain Portfolio Documentation.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Library Organization — 0/20 XP — NOT SOLVED — deadline 2026-12-31 00:00</h3>
+<p>Topics: CLI File &amp; Directory Management, Mv</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/61flprigwbhn">https://my.newtonschool.co/playground/code/61flprigwbhn</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Library Organization
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Library Organization
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+In a futuristic society, the Digital Library of Alexandria holds vast collections of ancient and modern knowledge. However, due to some recent changes, the library’s digital archive has become somewhat disorganized. As a digital librarian, your task is to reorganize some key files and collections, move entire sections and ensure everything is in the right place.
+
+
+
+ 
+
+Current Folder Structure:
+
+ 
+
+
+
+DigitalLibrary
+
+├── Ancient
+
+│   ├── scrolls.txt
+
+│   ├── manuscripts.txt
+
+├── Modern
+
+│   ├── novels.txt
+
+│   ├── essays.txt
+
+│   ├── plays.txt
+
+├── TemporaryFiles
+
+│   ├── backup_novels.txt
+
+│   ├── backup_plays.txt
+
+
+
+ 
+
+Note: You are currently right outside the DigitalLibrary folder.
+
+Tasks:
+
+Copy Files:
+
+Create a new folder called AncientTexts right inside the DigitalLibrary folder and copy the file scrolls.txt from the Ancient folder into the AncientTexts folder.
+
+Move a Folder:
+
+Create a new folder called Archives right inside the DigitalLibrary folder and move the entire Modern folder inside the Archives folder so that all modern literature is stored under the Archives folder.
+
+Organize Backup Files:
+
+Move the files backup_novels.txt and backup_plays.txt from TemporaryFiles inside the Modern folder that you just moved inside the Archives folder.
+
+
+
+Final Folder Structure:
+
+
+
+DigitalLibrary
+
+├── Ancient
+
+│   ├── scrolls.txt
+
+│   ├── manuscripts.txt
+
+├── AncientTexts
+
+│   ├── scrolls.txt
+
+├── Archives
+
+│   ├── Modern
+
+│   │   ├── novels.txt
+
+│   │   ├── essays.txt
+
+│   │   ├── plays.txt
+
+│   │   ├── plays.txt
+
+│   │   ├── backup_novels.txt
+
+│   │   ├── backup_plays.txt
+
+├── TemporaryFiles
+
+Input
+
+NA
+
+Output
+
+NA
+
+Example
+
+NA
+
+</pre>
+</section><hr>
+<section><h2>Mandatory - Practice Questions  [Other]  — due 2027-01-30 18:00</h2>
+<p class='gap'></p>
+<h3>Recovering a Lost API Key — 0/20 XP — NOT SOLVED — deadline 2027-01-30 18:00</h3>
+<p>Topics: Cd, Ls, Cat</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/4kouv5rmrisj">https://my.newtonschool.co/playground/code/4kouv5rmrisj</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Recovering a Lost API Key
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Recovering a Lost API Key
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You have joined a team that is testing a weather application. The application keeps failing with the following error:
+
+
+
+Error: API_KEY not found
+
+
+
+
+
+A senior developer tells you:
+
+
+
+&quot;The API key is already stored somewhere in the project directory. We usually keep sensitive configuration in hidden files. Find the API key and save it to a file named api_key.txt.&quot;
+
+Task:
+
+Explore the projects directory.
+
+Find the hidden file that contains the API key.
+
+Create a file named api_key.txt in the projects directory containing only the API key value.
+
+
+
+Example Project Structure:
+
+projects/
+
+├── app.js
+
+├── README.md
+
+├── logs/
+
+├── src/
+
+└── .env
+
+
+
+
+
+Requirements:
+
+Do not modify the hidden file containing the API key.
+
+The file api_key.txt must contain only the API key value.
+
+No extra text, spaces, or additional lines should be added.
+
+
+
+Expected File Content (api_key.txt):
+
+&lt;API_KEY_VALUE&gt;
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Inspect Repository Status and Commit a Specific File — 0/20 XP — NOT SOLVED — deadline 2027-01-30 18:00</h3>
+<p>Topics: Git add, Git commit, Git status</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/ko1aj9k1nc6a">https://my.newtonschool.co/playground/code/ko1aj9k1nc6a</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Inspect Repository Status and Commit a Specific File
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Inspect Repository Status and Commit a Specific File
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+Repo has two files: main.py (modified) and README.md (unmodified). Run git status first to inspect. Then stage only main.py and commit with message: Update main script.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Cleanup and Organize Documents — 0/60 XP — NOT SOLVED — deadline 2027-01-30 18:00</h3>
+<p>Topics: Cat, Cp, Mv, Rm</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/vt9bxz5qhrjy">https://my.newtonschool.co/playground/code/vt9bxz5qhrjy</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Cleanup and Organize Documents
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Cleanup and Organize Documents
+
+Hard
+
+2x
+
+0/60
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You have a directory Office with the following structure:
+
+
+
+Office/
+
+├── Reports/
+
+│   ├── jan.txt
+
+│   ├── feb.txt
+
+│   └── mar.txt
+
+├── old_notes.txt
+
+└── draft.txt
+
+
+
+Perform the following tasks :
+
+
+
+Create a new empty file named Office/index.txt.
+
+Delete the file old_notes.txt from Office — it is outdated.
+
+Rename draft.txt to final.txt inside Office.
+
+Delete the file Office/Reports/mar.txt — it&#x27;s no longer required.
+
+Create a new folder named Office/Reports_Backup, and inside it, combine the contents of Office/Reports/jan.txt and Office/Reports/feb.txt into a new file named q1_summary.txt.
+
+Create an empty file named Office/Reports_Backup/backup_created.txt to mark the backup.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Updating an Existing Application Log — 0/20 XP — NOT SOLVED — deadline 2027-01-30 18:00</h3>
+<p>Topics: Command-Line Interface (CLI), Essential Commands (ls, mkdir, cat, echo)</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/to5dtb3jixoc">https://my.newtonschool.co/playground/code/to5dtb3jixoc</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Updating an Existing Application Log
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Updating an Existing Application Log
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are helping your team debug a web application. The application already maintains a log file named app.log that contains important startup information.
+
+
+
+Before you begin, the file already contains:
+
+
+
+Server Initializing...
+
+Server Started
+
+
+
+
+
+A user has just successfully logged in, and you need to record this event in the log file.
+
+
+
+Task:
+
+
+
+Add the following line to the end of app.log:
+
+
+
+User login successful 
+
+
+
+Requirements:
+
+Do not delete or modify the existing contents of app.log.
+
+Append the new log entry to the file.
+
+
+
+Expected File Content:
+
+Server Initializing...
+
+Server Started 
+
+User login successful 
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Banking Records Under Lock — 0/60 XP — NOT SOLVED — deadline 2027-01-30 18:00</h3>
+<p>Topics: Chmod, File Ownership and Permissions</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/9ovqf4iihb88">https://my.newtonschool.co/playground/code/9ovqf4iihb88</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Banking Records Under Lock
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Banking Records Under Lock
+
+Hard
+
+2x
+
+0/60
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are an internal auditor at a national bank. The first-quarter ledgers must be reviewed, archived, consolidated into a secure vault, and temporary files cleaned up. The bank&#x27;s file system is locked down: some directories cannot be written to, and the vault cannot even be entered. You must work out exactly which permissions each task needs. Some tasks need no permission changes at all, and some need a temporary change to a directory. Every temporary change must be reverted, and every final permission must match the requirements exactly.
+
+
+
+Given Directory Structure:
+
+
+
+bank/
+
+├── ledgers/
+
+│   ├── jan.txt
+
+│   ├── feb.txt
+
+│   └── mar.txt
+
+├── vault/
+
+├── reports/
+
+├── tmp/
+
+│   ├── a.tmp
+
+│   ├── b.tmp
+
+│   ├── c.tmp
+
+│   └── session.log
+
+└── master.key
+
+
+
+Pre-existing Permissions:
+
+
+
+ledgers/: read and execute for owner, group and others; no one has write permission.
+
+jan.txt, feb.txt, mar.txt: read-only for owner, group and others.
+
+vault/: no permissions for anyone.
+
+reports/: read, write and execute for owner; read and execute for group and others.
+
+tmp/: read and execute for owner, group and others; no one has write permission.
+
+a.tmp, b.tmp, c.tmp, session.log: read and write for owner; read-only for group and others.
+
+master.key: no permissions for anyone.
+
+
+
+Actions to Perform:
+
+
+
+Copy February&#x27;s ledger for review.
+
+
+
+Copy ledgers/feb.txt into reports/ as feb_copy.txt.
+
+A copied file does not automatically carry the original&#x27;s permissions. Set feb_copy.txt to read and write for owner, read-only for group, and no permissions for others.
+
+Annotate February&#x27;s ledger.
+
+Append the exact line FEB-28 Reviewed by auditor to ledgers/feb.txt.
+
+After appending, feb.txt must be read-only for owner, group and others again.
+
+Update the session log.
+
+Append the exact line Audit session opened to tmp/session.log.
+
+Create the archive.
+
+Inside reports/, create the nested path archive/2026/.
+
+The 2026/ directory must have read, write and execute for owner, read and execute for group, and no permissions for others.
+
+Archive the review copy.
+
+Move reports/feb_copy.txt into reports/archive/2026/ and rename it to feb_review.txt in the same command.
+
+Tag and secure the reports.
+
+Create an empty hidden file reports/.audit_tag with no permissions for owner, group or others.
+
+Set reports/ to read, write and execute for owner, read and execute for group, and no permissions for others.
+
+Consolidate the ledgers in the vault.
+
+Create vault/q1_ledger.txt containing the full contents of jan.txt, feb.txt and mar.txt, in exactly that order. The q1_ledger must be readable only by the owner, with no write permission for anyone.
+
+At the end, vault/ must have no permissions for anyone, exactly as it was at the start.
+
+Purge temporary files.
+
+Delete all three .tmp files inside tmp/ using a single wildcard command. session.log must not be deleted.
+
+At the end, tmp/ must have exactly its original permissions.
+
+
+
+Important:
+
+
+
+master.key must not be touched. At the end it must still have its original content and no permissions for anyone.
+
+feb_review.txt must not contain the line added in step 2, but q1_ledger.txt must contain it.
+
+session.log must still exist with its original permissions, containing its original content plus the line from step 3.
+
+jan.txt and mar.txt must remain unchanged, with their original content and permissions.
+
+Order matters. Read all the actions before you begin.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Multiple File Commits and Commit History Review — 0/20 XP — NOT SOLVED — deadline 2027-01-30 18:00</h3>
+<p>Topics: Git Commands, Git add, Git commit, Git log</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/3kt2aexvwinx">https://my.newtonschool.co/playground/code/3kt2aexvwinx</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Multiple File Commits and Commit History Review
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Multiple File Commits and Commit History Review
+
+Easy
+
+2x
+
+0/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+Repository is already initialized.
+
+
+
+The files header.html and footer.html already exist in the repository.
+
+
+
+Add some content to header.html, then stage and commit your changes with the message:
+
+
+
+Add header
+
+
+
+Next, add some content to footer.html, then stage and commit your changes with the message:
+
+
+
+Add footer
+
+
+
+Finally, run:
+
+
+
+git log --oneline
+
+
+
+to verify that both commits appear in the commit history.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Selective Staging with Multiple Commits and Log Review — 0/40 XP — NOT SOLVED — deadline 2027-01-30 18:00</h3>
+<p>Topics: Git Commands, Git add, Git commit, Git log</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/6ljwbtbf4xcr">https://my.newtonschool.co/playground/code/6ljwbtbf4xcr</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Selective Staging with Multiple Commits and Log Review
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Selective Staging with Multiple Commits and Log Review
+
+Medium
+
+2x
+
+0/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+A Git repository is already initialized, and both README.md and main.py already exist.
+
+
+
+Add some content to README.md, stage only README.md, and commit it with the message:
+
+
+
+Update readme
+
+
+
+Then add some content to main.py, stage only main.py, and commit it with the message:
+
+
+
+Update main
+
+
+
+Finally, run:
+
+
+
+git log --oneline
+
+
+
+to view the commit history.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Three Levels of Access — 0/20 XP — NOT SOLVED — deadline 2027-01-30 18:00</h3>
+<p>Topics: Chmod, File Ownership and Permissions</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/74dyuwbfq6i4">https://my.newtonschool.co/playground/code/74dyuwbfq6i4</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Three Levels of Access
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Three Levels of Access
+
+Easy
+
+10/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+After a security review, three files in the clearance directory were found with wide-open permissions. Each file must be tightened to a different clearance level using numeric chmod.
+
+
+
+Given Directory Structure:
+
+
+
+clearance/
+
+├── public.txt     
+
+├── team.txt      
+
+└── private.txt   
+
+
+
+Current Permissions:
+
+
+
+All three files: full permissions for everyone.
+
+
+
+Tasks to Complete:
+
+
+
+public.txt: owner can read and write; group and others can only read.
+
+team.txt: owner can read and write; group can only read; others get nothing.
+
+private.txt: owner can read and write; group and others get nothing.
+
+Do not modify the content of any file.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Purge the Locked Workspace — 0/40 XP — NOT SOLVED — deadline 2027-01-30 18:00</h3>
+<p>Topics: Chmod, File Ownership and Permissions</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/23ga7xbyeihy">https://my.newtonschool.co/playground/code/23ga7xbyeihy</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Purge the Locked Workspace
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Purge the Locked Workspace
+
+Medium
+
+2x
+
+0/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+A corrupted draft is stuck inside a locked workspace. The draft itself is read-only, and the workspace directory has no write permission. Deleting a file requires write permission on the directory, not on the file. Delete the corrupted draft, create a clean replacement, and lock the workspace again.
+
+
+
+Given Directory Structure:
+
+
+
+workspace/     (Write access removed)
+
+├── old_draft.txt   (Read-only, corrupted)
+
+└── notes.txt
+
+
+
+Current Permissions:
+
+
+
+workspace/ directory: Write permission removed (chmod 555).
+
+old_draft.txt: Read-only for everyone (chmod 444).
+
+
+
+Tasks to Complete:
+
+
+
+Delete workspace/old_draft.txt.
+
+Create a new file workspace/final_draft.txt containing exactly Clean copy.
+
+Using chmod, set the permissions of final_draft.txt to read and write for user, read for group and no permissions for others.
+
+notes.txt must remain untouched.
+
+Restore workspace/ permissions to read and execute for user, group and others.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Deployment Project Permissions — 0/40 XP — NOT SOLVED — deadline 2027-01-30 18:00</h3>
+<p>Topics: Chmod, File Ownership and Permissions</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/33n9tt9kovhd">https://my.newtonschool.co/playground/code/33n9tt9kovhd</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Deployment Project Permissions
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Deployment Project Permissions
+
+Medium
+
+20/40
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are preparing a shared deployment project where different roles (developers, CI system, general viewers) need different levels of access to different parts of the codebase. You need to set the correct permissions on each part of the project so it is accessed only as intended.
+
+
+
+Given Directory Structure:
+
+
+
+deployment/
+
+├── app/
+
+│   ├── server.py
+
+│   ├── handler.py
+
+│   └── settings.py
+
+├── datasets/
+
+│   ├── train.csv
+
+│   └── test.csv
+
+├── docs/
+
+│   └── OVERVIEW.md
+
+└── bin/
+
+    ├── start.sh
+
+    ├── stop.sh
+
+    └── healthcheck.sh
+
+
+
+All files currently have default permissions (644 for files, 755 for directories). Apply the following rules:
+
+
+
+Python source files (every .py file inside deployment/app/):
+
+
+
+Owner: read, write, execute
+
+Group: no access
+
+Others: no access
+
+The datasets/ directory, and every file inside it:
+
+Owner: read, write, execute
+
+Group: read, write, execute
+
+Others: no access
+
+docs/OVERVIEW.md:
+
+Owner: read, write
+
+Group: read only
+
+Others: read only
+
+Every shell script (every .sh file inside deployment/bin/):
+
+Owner: read, write, execute
+
+Group: read, execute (no write)
+
+Others: read, execute (no write)
+
+
+
+Deliverable: Write the chmod command(s) you would run, one rule at a time, to reach the end state described above. You may use wildcards (e.g. *.py) instead of listing files individually.
+
+
+
+Note: Run your commands from outside the deployment/ directory (i.e. paths should start with deployment/..., not be run from inside it).
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Audit Trail Setup — 0/20 XP — NOT SOLVED — deadline 2027-01-30 18:00</h3>
+<p>Topics: Chmod, File Ownership and Permissions</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/eu8eoa3cnihv">https://my.newtonschool.co/playground/code/eu8eoa3cnihv</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Audit Trail Setup
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Audit Trail Setup
+
+Easy
+
+10/20
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You are given the following folder structure inside the current directory.
+
+
+
+audit_trail/
+
+└── access.log
+
+
+
+Perform the following operations:
+
+
+
+Change the permissions of the audit_trail/ directory so that the owner has full access (read, write, execute), the group has read and execute only, and others have no access at all.
+
+Inside audit_trail/, create a new file named summary.txt containing the exact text Audit Summary Generated.
+
+Set the permissions of summary.txt so that the owner can read and write, the group can only read, and others have no access.
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+<h3>Data Breach Response — 0/60 XP — NOT SOLVED — deadline 2027-01-30 18:00</h3>
+<p>Topics: Cp, Mv, Chmod, File Ownership and Permissions</p>
+<p class='gap'></p>
+<p>URL: <a href="https://my.newtonschool.co/playground/code/lkwqrg7jcc14">https://my.newtonschool.co/playground/code/lkwqrg7jcc14</a></p>
+<p class='gap'></p>
+<pre>
+Back
+
+Data Breach Response
+
+Total XP
+
+5,795
+
+Leaderboard Unlocked
+
+Rank Increased
+
+Run
+
+Submit
+
+QUESTION
+
+Data Breach Response
+
+Hard
+
+2x
+
+0/60
+
+Time Limit: 2, Memory Limit: 128000
+
+
+
+You have been tasked with handling Data Breach Response, a secure directory of evidence and reports from an active security incident. Some files and directories currently have restricted permissions that you must work around without permanently weakening security.
+
+
+
+Given Directory Structure:
+
+
+
+breach_response/
+
+├── evidence/
+
+│   └── log_dump.txt
+
+├── secure/
+
+├── reports/
+
+│   └── incident_summary.txt
+
+└── classified.txt
+
+
+
+
+
+Pre-existing Permissions:
+
+
+
+evidence/ directory — write permission removed (chmod 555)
+
+log_dump.txt — read-only (chmod 444)
+
+incident_summary.txt — read-only (chmod 444)
+
+classified.txt — no permissions (chmod 000)
+
+
+
+Actions to Perform:
+
+
+
+Copy a file into breach_response/:
+
+
+
+Copy evidence/log_dump.txt to breach_response/log_dump.txt.
+
+Move the restricted directory:
+
+Move the entire evidence/ directory into secure/, resulting in secure/evidence/.
+
+evidence/ currently has no write permission (555). Since moving a directory into a new parent requires updating its own metadata, you&#x27;ll need to temporarily add write permission to evidence/ before moving it.
+
+After the move, restore secure/evidence/ to permission 555.
+
+Edit the read-only report:
+
+Append the exact line Breach confirmed to reports/incident_summary.txt.
+
+incident_summary.txt currently has no write permission (444), so you&#x27;ll need to temporarily adjust permissions to edit it.
+
+Restore the file permissions to 444 afterward.
+
+Create a new report:
+
+Create secure/forensics_report.txt containing the exact text Forensics Complete.
+
+Set its permissions to 600.
+
+Append to the report again:
+
+Append the exact line Escalated to security team to reports/incident_summary.txt.
+
+As before, temporarily adjust permissions to write, then restore incident_summary.txt to 444 afterward.
+
+
+
+Important: Do not modify classified.txt. It must remain unchanged with permission 000.
+
+
+
+Input
+
+NA
+
+Output
+
+NA
+
+Constraints
+
+NA
+
+Example
+
+NA
+
+</pre>
+<p class='gap'></p>
+</section><hr>
+<section><h2>Quizzes / quiz contests (11) — schedules only</h2>
+<p>(Portal shows quiz QUESTIONS only after starting a test — starting tests is forbidden, so no question text exists for these.)</p>
+<ul>
+<li>Course and Instructor Introduction, Computer Systems - Revision — 2026-09-01 17:00 -&gt; 2026-09-06 17:00 — xp 32/38</li>
+<li>Computer Hardware, Computer Software, Operating System - Revision — 2026-09-03 18:35 -&gt; 2026-09-08 18:35 — xp 0/26</li>
+<li>Command-Line Interface (CLI), Terminal - Revision — 2026-09-08 16:05 -&gt; 2026-09-13 16:05 — xp 16/16</li>
+<li>CLI File &amp; Directory Management, CLI Package Management, CLI Flags, Options &amp; Op ... - Revision — 2026-09-10 18:05 -&gt; 2026-09-15 18:05 — xp 28/26</li>
+<li>Operating System, Operating System Architecture, Device Management, Process Mana ... - Revision — 2026-09-16 13:00 -&gt; 2026-09-21 13:00 — xp 0/34</li>
+<li>Operating System, Filesystem Management, File Ownership and Permissions, PATH, O ... - Revision — 2026-09-22 16:00 -&gt; 2026-09-27 16:00 — xp 0/24</li>
+<li>Computer Software, Compiler, Interpreter, Number Representation &amp; Data Encoding - Revision — 2026-09-24 18:05 -&gt; 2026-09-29 18:05 — xp 0/48</li>
+<li>Number Systems, Decimal Number System, Binary Number System, Hexadecimal Number  ... - Revision — 2026-09-29 17:35 -&gt; 2026-10-04 17:35 — xp 13/30</li>
+<li>Version Control, Repository, Git, Git Commands - Revision — 2026-10-01 18:35 -&gt; 2026-10-06 18:35 — xp 24/24</li>
+<li>GitHub, Remote Repository Management, GitHub Collaboration, Github Pull Requests - Revision — 2026-10-06 17:00 -&gt; 2026-10-11 17:00 — xp 0/34</li>
+<li>Computer Networks, LAN, MAN, WAN, DNS, Packet Switching, Network Protocols, Rout ... - Revision — 2026-10-19 16:00 -&gt; 2026-10-24 16:00 — xp 0/22</li>
+</ul>
+<p class='gap'></p>
+</section><hr>
+<section><h2>Questions below lecture videos (per lecture)</h2>
+<p class='gap'></p>
+<h3>00rpem1820ri  [eq7lnkj6lo7s]</h3>
+<p>=== Assignments tab (quiz cards + in-class + post-class sections) ===</p>
+<p>Assignments1</p>
+<p>Lecture Notes</p>
+<p>QUIZ</p>
+<p>Version Control, Repository, Git, Git Commands - Revision</p>
+<p>Attempt duration - Oct 1st 2026 6:35 pm to Oct 6th 2026 6:35 pm</p>
+<p>Attempted on Oct 5th 2026 1:51 pm</p>
+<p>View Solutions</p>
+<p>In class assignments</p>
+<p>This section contains the assignments and questions solved in the class</p>
+<p>No in-class assignments for this lecture</p>
+<p>Post class assignments</p>
+<p>This section contains the assignments related to the topics covered in this lecture</p>
+<p>Q1. Undo Incorrect Changes and Commit the Fixeasy</p>
+<p class='gap'></p>
+<p>You accidentally added the wrong line Wrong line to app.txt and have NOT staged it.</p>
+<p class='gap'></p>
+<p>Undo the unstaged change using git checkout.</p>
+<p class='gap'></p>
+<p>Then add the correct line Correct line to the end of app.txt as a new line, stage the file, and commit it with the message:</p>
+<p class='gap'></p>
+<p>Fix app content</p>
+<p class='gap'></p>
+<p>Read More</p>
+<p>Your Solution</p>
+<p>Q2. A new team member sets up a repositoryeasy</p>
+<p>You joined a new project. The folder my-app already exists with a file app.py inside it. Navigate into my-app, initialize Git, stage everything, and make the first commit with message: Project setupRead More</p>
+<p>Your Solution</p>
+<p>Q3. Multiple File Commits and Commit History Revieweasy</p>
+<p class='gap'></p>
+<p>Repository is already initialized.</p>
+<p class='gap'></p>
+<p>The files header.html and footer.html already exist in the repository.</p>
+<p class='gap'></p>
+<p>Add some content to header.html, then stage and commit your changes with the message:</p>
+<p class='gap'></p>
+<p>Add header</p>
+<p class='gap'></p>
+<p>Next, add some content to footer.html, then stage and commit your changes with the message:</p>
+<p class='gap'></p>
+<p>Add footer</p>
+<p class='gap'></p>
+<p>Finally, run:</p>
+<p class='gap'></p>
+<p>git log --oneline</p>
+<p class='gap'></p>
+<p>to verify that both commits appear in the commit history.</p>
+<p class='gap'></p>
+<p>Read More</p>
+<p>Your Solution</p>
+<p>Q4. Selective Staging with Multiple Commits and Log Reviewmedium</p>
+<p class='gap'></p>
+<p>A Git repository is already initialized, and both README.md and main.py already exist.</p>
+<p class='gap'></p>
+<p>Add some content to README.md, stage only README.md, and commit it with the message:</p>
+<p class='gap'></p>
+<p>Update readme</p>
+<p class='gap'></p>
+<p>Then add some content to main.py, stage only main.py, and commit it with the message:</p>
+<p class='gap'></p>
+<p>Update main</p>
+<p class='gap'></p>
+<p>Finally, run:</p>
+<p class='gap'></p>
+<p>git log --oneline</p>
+<p class='gap'></p>
+<p>to view the commit history.</p>
+<p class='gap'></p>
+<p>Read More</p>
+<p>Your Solution</p>
+<p class='gap'></p>
+<h3>4mq9i71pn3lf  [eq7lnkj6lo7s]</h3>
+<p>=== Assignments tab (quiz cards + in-class + post-class sections) ===</p>
+<p>Assignments1</p>
+<p>In-class Quizzes</p>
+<p>3</p>
+<p>Lecture Notes</p>
+<p>QUIZ</p>
+<p>Computer Software, Compiler, Interpreter, Number Representation &amp; Data Encoding - Revision</p>
+<p>Attempt duration - Sep 24th 2026 6:05 pm to Sep 29th 2026 6:05 pm</p>
+<p>Your submission will be marked as “LATE SUBMISSION” because you have crossed the given submission deadline</p>
+<p>Attempt Now</p>
+<p>In class assignments</p>
+<p>This section contains the assignments and questions solved in the class</p>
+<p>No in-class assignments for this lecture</p>
+<p>Post class assignments</p>
+<p>This section contains the assignments related to the topics covered in this lecture</p>
+<p>Q1. Execute a Python Script Directlyeasy</p>
+<p>A teammate has asked you to create a Python script that can be executed directly from the terminal without typing python3 before the filename.</p>
+<p>Create a file named hello.py that prints: Hello from Python</p>
+<p>Configure the script so that it can be executed directly from the terminal.</p>
+<p>Expected Result:</p>
+<p>Running the following command:</p>
+<p>./hello.py</p>
+<p>should display:</p>
+<p>Hello from PythonRead More</p>
+<p>Your Solution</p>
+<p>Q2. Resolve the Issue with hello.pyeasy</p>
+<p>A teammate has handed over a Python script named hello.py and says:</p>
+<p>&quot;The script works on my machine, but I can&#x27;t run it directly from the terminal on yours. Can you fix it?&quot;</p>
+<p class='gap'></p>
+<p>You are not allowed to modify the script itself. Investigate the problem and make the script executable so it can be run directly from the terminal. Running the following command:</p>
+<p>./hello.py</p>
+<p>should display:</p>
+<p>Hello from PythonRead More</p>
+<p>Your Solution</p>
+<p>Q3. Simplify the Compilation Processeasy</p>
+<p>Your team frequently compiles a C program before testing it. Instead of typing the compilation command every time, your manager wants a reusable build script.</p>
+<p>Create a shell script named build.sh that compiles hello.c into an executable named hello.</p>
+<p>The script should be executable and should automate the build process using terminal commands only.</p>
+<p>Expected Result</p>
+<p>After creating the script, run both of the following commands:</p>
+<p>./build.sh</p>
+<p>./hello</p>
+<p>The output should be:</p>
+<p>Hello from CRead More</p>
+<p>Your Solution</p>
+<p class='gap'></p>
+<p>=== In-class Quizzes tab ===</p>
+<p>In-class Quizzes</p>
+<p>3</p>
+<p>Lecture Notes</p>
+<p>In-class Quizzes</p>
+<p>These in-class quizzes are only for learning purposes and are not meant for evaluation.</p>
+<p>Classroom Quiz - Computer Software</p>
+<p>not attempted</p>
+<p>Total Questions</p>
+<p>1 Questions</p>
+<p>Your Score</p>
+<p>-/1</p>
+<p>Classroom Quiz - Computer Software, Compiler</p>
+<p>not attempted</p>
+<p>Classroom Quiz - Computer Software, Compiler, Interpreter</p>
+<p>not attempted</p>
+<p>Classroom Quiz - Computer Software</p>
+<p>Submit Quiz</p>
+<p>QUESTION 1/1</p>
+<p>Mark for review</p>
+<p>Clear Selection</p>
+<p>A CPU can directly execute which of the following?</p>
+<p>A</p>
+<p>C source code stored in a .c file</p>
+<p>B</p>
+<p>Python source code stored in a .py file</p>
+<p>C</p>
+<p>Machine code instructions represented in binary</p>
+<p>D</p>
+<p>Assembly code written by a programmer</p>
+<p>Previous</p>
+<p>Next</p>
+<p class='gap'></p>
+<p>Newton School</p>
+<p class='gap'></p>
+<h3>jxn4cile2qht  [eq7lnkj6lo7s]</h3>
+<p>=== Assignments tab (quiz cards + in-class + post-class sections) ===</p>
+<p>Assignments1</p>
+<p>Lecture Notes</p>
+<p>QUIZ</p>
+<p>GitHub, Remote Repository Management, GitHub Collaboration, Github Pull Requests - Revision</p>
+<p>Attempt duration - Oct 6th 2026 5:00 pm to Oct 11th 2026 5:00 pm</p>
+<p>Your submission will be marked as “LATE SUBMISSION” because you have crossed the given submission deadline</p>
+<p>Attempt Now</p>
+<p>In class assignments</p>
+<p>This section contains the assignments and questions solved in the class</p>
+<p>No in-class assignments for this lecture</p>
+<p>Post class assignments</p>
+<p>This section contains the assignments related to the topics covered in this lecture</p>
+<p>Q1. Clone and Verify Before Workingeasy</p>
+<p>Before starting work on a shared project, your process is: clone <a href="https://github.com/org/inventory-system.git,">https://github.com/org/inventory-system.git,</a> navigate into inventory-system, verify the remote is set correctly, pull any latest changes (just to be safe), and check the commit log in compact format.Read More</p>
+<p>Complete Now</p>
+<p>Q2. Full Team Collaboration Simulationmedium</p>
+<p class='gap'></p>
+<p>You&#x27;re picking up a teammate&#x27;s CRM project. Clone <a href="https://github.com/teamdev/crm-tool.git">https://github.com/teamdev/crm-tool.git</a> and cd into crm-tool. Someone may have pushed a last-minute commit right after you cloned, so run git pull to be safe.</p>
+<p class='gap'></p>
+<p>The cloned src/contacts.js and src/deals.js are empty stub files — write some real content into each before staging them (e.g. echo &quot;export const contacts = [];&quot; &gt; src/contacts.js). Do not commit until you have added content to both files.</p>
+<p class='gap'></p>
+<p>Stage only src/contacts.js and src/deals.js — never stage src/internal-notes.js or build/output.min.js. Commit with message Add CRM core modules. The remote is already set from the clone, so just push.</p>
+<p class='gap'></p>
+<p>Finally, run git log and git remote -v to confirm.</p>
+<p class='gap'></p>
+<p>Read More</p>
+<p>Complete Now</p>
+<p>Q3. Collaborative Git Workflow Challengemedium</p>
+<p>You are working on a collaborative project in the chat-app directory. Navigate into it. A remote repository is already configured. Then pull to check if there are any changes on remote or not.  Add content Resolved message issue in client.js, then stage and commit it using the commit message: &quot;fix: resolve message duplicate issue&quot;. Finally push your update to the remote repository.Read More</p>
+<p>Complete Now</p>
+<p>Q4. New Machine, Same Projectmedium</p>
+<p class='gap'></p>
+<p>You just got a new laptop. Clone <a href="https://github.com/yourname/recipe-app.git.">https://github.com/yourname/recipe-app.git.</a> Navigate into recipe-app. Pull (to be safe).</p>
+<p class='gap'></p>
+<p>Add some content to app.js, db.js, and helpers/format.js. Do not commit until you have made changes to all three files. Then stage all three — but NOT helpers/debug.js.</p>
+<p class='gap'></p>
+<p>Commit with message Resume recipe app development. Push back.</p>
+<p class='gap'></p>
+<p>Read More</p>
+<p>Complete Now</p>
+<p class='gap'></p>
+<h3>mqndqqj16b1s  [eq7lnkj6lo7s]</h3>
+<p>=== Assignments tab (quiz cards + in-class + post-class sections) ===</p>
+<p>Assignments0</p>
+<p>In-class Quizzes</p>
+<p>3</p>
+<p>Lecture Notes</p>
+<p>QUIZ</p>
+<p>Computer Hardware, Computer Software, Operating System - Revision</p>
+<p>Attempt duration - Sep 3rd 2026 6:35 pm to Sep 8th 2026 6:35 pm</p>
+<p>Your submission will be marked as “LATE SUBMISSION” because you have crossed the given submission deadline</p>
+<p>Complete Now</p>
+<p>In class assignments</p>
+<p>This section contains the assignments and questions solved in the class</p>
+<p>No in-class assignments for this lecture</p>
+<p>Post class assignments</p>
+<p>This section contains the assignments related to the topics covered in this lecture</p>
+<p>No post-class assignments for this lecture</p>
+<p class='gap'></p>
+<p>=== In-class Quizzes tab ===</p>
+<p>In-class Quizzes</p>
+<p>3</p>
+<p>Lecture Notes</p>
+<p>In-class Quizzes</p>
+<p>These in-class quizzes are only for learning purposes and are not meant for evaluation.</p>
+<p>Classroom Quiz - Computer Hardware</p>
+<p>attempted</p>
+<p>Total Questions</p>
+<p>6 Questions</p>
+<p>Your Score</p>
+<p>7/7</p>
+<p>Classroom Quiz - Computer Hardware, Computer Software</p>
+<p>not attempted</p>
+<p>Classroom Quiz - Computer Hardware, Computer Software, Operating System</p>
+<p>not attempted</p>
+<p>Classroom Quiz - Computer Hardware</p>
+<p>Revise</p>
+<p>QUESTION 1/6</p>
+<p>Which component executes instructions in a computer?</p>
+<p>A</p>
+<p>SSD</p>
+<p>CPU</p>
+<p>Explanation:The CPU executes instructions and manages the tasks performed by a computer. Actions like opening applications, browsing the internet, or running software are processed by the CPU.</p>
+<p>C</p>
+<p>Speaker</p>
+<p>D</p>
+<p>Monitor</p>
+<p>CORRECT ANSWER</p>
+<p>QUESTION 2/6</p>
+<p>Which component is mainly responsible for graphics rendering and parallel processing?</p>
+<p>A</p>
+<p>CPU</p>
+<p>B</p>
+<p>RAM</p>
+<p>GPU</p>
+<p>Explanation:The GPU (Graphics Processing Unit) is designed for graphics rendering and handling parallel processing tasks efficiently.</p>
+<p>D</p>
+<p>SSD</p>
+<p>CORRECT ANSWER</p>
+<p>QUESTION 3/6</p>
+<p>Which hardware component connects all major components together?</p>
+<p>A</p>
+<p>GPU</p>
+<p>Motherboard</p>
+<p>Explanation:The motherboard is the main circuit board that connects and allows communication between all major computer components.</p>
+<p>C</p>
+<p>SSD</p>
+<p>D</p>
+<p>RAM</p>
+<p>CORRECT ANSWER</p>
+<p>QUESTION 4/6</p>
+<p>Which of the following is an input device?</p>
+<p>A</p>
+<p>Speaker</p>
+<p>B</p>
+<p>Monitor</p>
+<p>Keyboard</p>
+<p>Explanation:A keyboard is an input device used to enter data and commands into a computer. The others are output devices.</p>
+<p>D</p>
+<p>Projector</p>
+<p>CORRECT ANSWER</p>
+<p>QUESTION 5/6</p>
+<p>You open 20 browser tabs and your laptop becomes slow. Which component are you most likely running out of?</p>
+<p>A</p>
+<p>GPU</p>
+<p>RAM</p>
+<p>Explanation:Each browser tab uses RAM while it is running. Opening too many tabs can fill up the available RAM, causing the laptop to slow down and lag.</p>
+<p>C</p>
+<p>Monitor</p>
+<p>D</p>
+<p>Speaker</p>
+<p>CORRECT ANSWER</p>
+<p>QUESTION 6/6</p>
+<p>Which of the following is an output device?</p>
+<p>A</p>
+<p>Mouse</p>
+<p>B</p>
+<p>Scanner</p>
+<p>C</p>
+<p>Microphone</p>
+<p>Monitor</p>
+<p>Explanation:A monitor displays information like text, images, and videos from the computer to the user, so it is an output device.</p>
+<p>CORRECT ANSWER</p>
+<p class='gap'></p>
+<p>Newton School</p>
+<p class='gap'></p>
+<h3>uh4th8cl61s2  [eq7lnkj6lo7s]</h3>
+<p>=== Assignments tab (quiz cards + in-class + post-class sections) ===</p>
+<p>Assignments1</p>
+<p>In-class Quizzes</p>
+<p>5</p>
+<p>Lecture Notes</p>
+<p>QUIZ</p>
+<p>CLI File &amp; Directory Management, CLI Package Management, CLI Flags, Options &amp; Op ... - Revision</p>
+<p>Attempt duration - Sep 10th 2026 6:05 pm to Sep 15th 2026 6:05 pm</p>
+<p>Attempted on Sep 12th 2026 12:50 am</p>
+<p>View Solutions</p>
+<p>In class assignments</p>
+<p>This section contains the assignments and questions solved in the class</p>
+<p>No in-class assignments for this lecture</p>
+<p>Post class assignments</p>
+<p>This section contains the assignments related to the topics covered in this lecture</p>
+<p>Q1. Advanced File Managementmedium</p>
+<p class='gap'></p>
+<p>You are helping your team clean up and organize project files. </p>
+<p class='gap'></p>
+<p>Steps to follow:</p>
+<p class='gap'></p>
+<p>Create a folder called project-files.</p>
+<p class='gap'></p>
+<p>Inside it, create three files:</p>
+<p class='gap'></p>
+<p>report.docx</p>
+<p class='gap'></p>
+<p>summary.docx</p>
+<p class='gap'></p>
+<p>draft.docx</p>
+<p class='gap'></p>
+<p>Make a copy of report.docx and name it report_backup.docx.</p>
+<p class='gap'></p>
+<p>Create a new folder called old. Move draft.docx into old/.</p>
+<p class='gap'></p>
+<p>Rename summary.docx to final_summary.docx.</p>
+<p class='gap'></p>
+<p>Copy final_summary.docx into the old/ folder as well.</p>
+<p class='gap'></p>
+<p>Delete report_backup.docx.</p>
+<p class='gap'></p>
+<p>Final structure should look like this:</p>
+<p class='gap'></p>
+<p>project-files/</p>
+<p>├── report.docx</p>
+<p>├── final_summary.docx</p>
+<p>└── old/</p>
+<p>    ├── draft.docx</p>
+<p>    └── final_summary.docx</p>
+<p class='gap'></p>
+<p>Read More</p>
+<p>Your Solution</p>
+<p>Q2. Create a Project Folder Structuremedium</p>
+<p class='gap'></p>
+<p>You have recently joined a backend team that develops services for an e-commerce platform.</p>
+<p class='gap'></p>
+<p>To ensure consistency across projects, the team uses an internal command called create-service to generate the standard structure for new API services.</p>
+<p class='gap'></p>
+<p>During the onboarding of several new developers, the team noticed that newly generated services are missing important files and some directories are named incorrectly.</p>
+<p class='gap'></p>
+<p>The engineering manager asks you to investigate and repair the scaffold generator before the next batch of services is created.</p>
+<p class='gap'></p>
+<p>Tasks:</p>
+<p>Locate the create-service command.</p>
+<p>Inspect the script used by the command.</p>
+<p>Fix all issues in the script.</p>
+<p>Ensure the command can be executed.</p>
+<p>Run the command to generate a new service.</p>
+<p class='gap'></p>
+<p>Expected Service Structure:</p>
+<p>service/</p>
+<p>├── controllers/</p>
+<p>├── models/</p>
+<p>├── routes/</p>
+<p>├── middleware/</p>
+<p>├── server.js</p>
+<p>└── README.md</p>
+<p class='gap'></p>
+<p class='gap'></p>
+<p>Expected README Content:</p>
+<p>API Service</p>
+<p class='gap'></p>
+<p class='gap'></p>
+<p>Expected server.js Content:</p>
+<p>console.log(&quot;Server started&quot;);</p>
+<p class='gap'></p>
+<p class='gap'></p>
+<p>Requirements:</p>
+<p>Directory names must exactly match the expected structure.</p>
+<p>The middleware directory must be present.</p>
+<p>README.md must exist inside the service directory.</p>
+<p>server.js must exist inside the service directory.</p>
+<p>The contents of README.md must exactly match the expected text.</p>
+<p>The contents of server.js must exactly match the expected text.</p>
+<p>The command should execute successfully after your fixes.</p>
+<p>Read More</p>
+<p>Your Solution</p>
+<p>Q3. Recover the Emergency Access Tokenmedium</p>
+<p class='gap'></p>
+<p>You are assisting the Site Reliability Engineering (SRE) team during a production incident.</p>
+<p class='gap'></p>
+<p>An emergency access token is required to restore a critical service. The token was intentionally stored somewhere inside a deeply nested backup directory structure for security reasons.</p>
+<p class='gap'></p>
+<p>The backup system has created many nested folders containing many files. Most of these files are not readable due to permission restrictions.</p>
+<p class='gap'></p>
+<p>The SRE team remembers only one thing:</p>
+<p class='gap'></p>
+<p>The emergency token is stored in the only readable text file within the backup directory tree.</p>
+<p class='gap'></p>
+<p>Your task is to locate the readable file, inspect its contents, and recover the token.</p>
+<p class='gap'></p>
+<p>Tasks:</p>
+<p>Explore the directory structure.</p>
+<p>Find the readable file inside the backup directory tree.</p>
+<p>Create a file named token.txt in the current directory containing only the token value.</p>
+<p class='gap'></p>
+<p>Example Token Format:</p>
+<p>ACCESS_TOKEN_VALUE=abc123xyz789</p>
+<p class='gap'></p>
+<p class='gap'></p>
+<p>Expected Output File:</p>
+<p>abc123xyz789</p>
+<p class='gap'></p>
+<p class='gap'></p>
+<p>Requirements:</p>
+<p>Do not modify any existing files.</p>
+<p>token.txt must contain only the token value.</p>
+<p>No additional text or whitespace should be present.</p>
+<p>Read More</p>
+<p>Your Solution</p>
+<p>Q4. Locate and Extract the Recovery Keymedium</p>
+<p class='gap'></p>
+<p>A production server experienced a critical failure overnight. Before shutting down, the backup system created multiple backup folders and scattered diagnostic files across them.</p>
+<p class='gap'></p>
+<p>Your team needs to restore access, but the recovery key was saved in only one backup file. The file name and location are unknown.</p>
+<p class='gap'></p>
+<p>Search through the backup directory tree, find the recovery key, and save only the key value (without RECOVERY_KEY=) into a file named key.txt in the current directory.</p>
+<p class='gap'></p>
+<p>Task:</p>
+<p>Locate the recovery key hidden somewhere inside the backups directory.</p>
+<p>Extract only the recovery key value.</p>
+<p>Save the key value into a file named key.txt in the current directory.</p>
+<p class='gap'></p>
+<p>For example, if a file contains:</p>
+<p class='gap'></p>
+<p>RECOVERY_KEY=7fK92mXqL8pR3vNz</p>
+<p class='gap'></p>
+<p>then key.txt should contain:</p>
+<p class='gap'></p>
+<p>7fK92mXqL8pR3vNz</p>
+<p class='gap'></p>
+<p>The recovery key may be located in any file within the backups directory tree.</p>
+<p class='gap'></p>
+<p>Read More</p>
+<p>Your Solution</p>
+<p class='gap'></p>
+<p>=== In-class Quizzes tab ===</p>
+<p>In-class Quizzes</p>
+<p>5</p>
+<p>Lecture Notes</p>
+<p>In-class Quizzes</p>
+<p>These in-class quizzes are only for learning purposes and are not meant for evaluation.</p>
+<p>Classroom Quiz - CLI File &amp; Directory Management, CLI Package Management, CLI Flags, Options &amp; Op ...</p>
+<p>attempted</p>
+<p>Total Questions</p>
+<p>1 Questions</p>
+<p>Your Score</p>
+<p>2/2</p>
+<p>Classroom Quiz - CLI File &amp; Directory Management, CLI Package Management, CLI Flags, Options &amp; Op ...</p>
+<p>attempted</p>
+<p>Classroom Quiz - CLI File &amp; Directory Management, CLI Package Management, CLI Flags, Options &amp; Op ...</p>
+<p>attempted</p>
+<p>Classroom Quiz - CLI File &amp; Directory Management, CLI Package Management, CLI Flags, Options &amp; Op ...</p>
+<p>attempted</p>
+<p>Classroom Quiz - CLI File &amp; Directory Management, CLI Package Management, CLI Flags, Options &amp; Op ...</p>
+<p>attempted</p>
+<p>Classroom Quiz - CLI File &amp; Directory Management, CLI Package Management, CLI Flags, Options &amp; Op ...</p>
+<p>Revise</p>
+<p>QUESTION 1/1</p>
+<p>Your friend runs this command:</p>
+<p>cowsay -f dragon &quot;Deploy successful&quot;</p>
+<p>What does -f do here?</p>
+<p>A</p>
+<p>Creates a file template</p>
+<p>Modifies the command behaviour</p>
+<p>Explanation:-f is a command-line flag that modifies how cowsay behaves. Specifically, it tells cowsay to use the dragon character template instead of the default cow when displaying the message.</p>
+<p>C</p>
+<p>Deletes the dragon template</p>
+<p>D</p>
+<p>Finds the output message</p>
+<p>CORRECT ANSWER</p>
+<p class='gap'></p>
+<p>Newton School</p>
+<p class='gap'></p>
+<h3>vfo5u6bvobpf  [eq7lnkj6lo7s]</h3>
+<p>=== Assignments tab (quiz cards + in-class + post-class sections) ===</p>
+<p>Assignments0</p>
+<p>In-class Quizzes</p>
+<p>1</p>
+<p>Lecture Notes</p>
+<p>QUIZ</p>
+<p>Command-Line Interface (CLI), Terminal - Revision</p>
+<p>Attempt duration - Sep 8th 2026 4:05 pm to Sep 13th 2026 4:05 pm</p>
+<p>Attempted on Sep 9th 2026 5:35 pm</p>
+<p>View Solutions</p>
+<p>In class assignments</p>
+<p>This section contains the assignments and questions solved in the class</p>
+<p>No in-class assignments for this lecture</p>
+<p>Post class assignments</p>
+<p>This section contains the assignments related to the topics covered in this lecture</p>
+<p>No post-class assignments for this lecture</p>
+<p class='gap'></p>
+<p>=== In-class Quizzes tab ===</p>
+<p>In-class Quizzes</p>
+<p>1</p>
+<p>Lecture Notes</p>
+<p>In-class Quizzes</p>
+<p>These in-class quizzes are only for learning purposes and are not meant for evaluation.</p>
+<p>Classroom Quiz - Command-Line Interface (CLI), Terminal</p>
+<p>not attempted</p>
+<p>Total Questions</p>
+<p>1 Questions</p>
+<p>Your Score</p>
+<p>-/1</p>
+<p>Classroom Quiz - Command-Line Interface (CLI), Terminal</p>
+<p>Submit Quiz</p>
+<p>QUESTION 1/1</p>
+<p>Mark for review</p>
+<p>Clear Selection</p>
+<p>Which command is used to to make colorful rainbow output in the terminal?</p>
+<p>A</p>
+<p>say</p>
+<p>B</p>
+<p>fortune</p>
+<p>C</p>
+<p>lolcat</p>
+<p>D</p>
+<p>mkdir</p>
+<p>Previous</p>
+<p>Next</p>
+<p class='gap'></p>
+<p>Newton School</p>
+<p class='gap'></p>
+<h3>ywvwme2ev25q  [eq7lnkj6lo7s]</h3>
+<p>=== Assignments tab (quiz cards + in-class + post-class sections) ===</p>
+<p>Assignments0</p>
+<p>In-class Quizzes</p>
+<p>1</p>
+<p>Lecture Notes</p>
+<p>QUIZ</p>
+<p>Course and Instructor Introduction, Computer Systems - Revision</p>
+<p>Attempt duration - Sep 1st 2026 5:00 pm to Sep 6th 2026 5:00 pm</p>
+<p>Attempted on Sep 1st 2026 11:47 pm</p>
+<p>View Solutions</p>
+<p>In class assignments</p>
+<p>This section contains the assignments and questions solved in the class</p>
+<p>No in-class assignments for this lecture</p>
+<p>Post class assignments</p>
+<p>This section contains the assignments related to the topics covered in this lecture</p>
+<p>No post-class assignments for this lecture</p>
+<p class='gap'></p>
+<p>=== In-class Quizzes tab ===</p>
+<p>In-class Quizzes</p>
+<p>1</p>
+<p>Lecture Notes</p>
+<p>In-class Quizzes</p>
+<p>These in-class quizzes are only for learning purposes and are not meant for evaluation.</p>
+<p>Classroom Quiz - Course and Instructor Introduction, Computer Systems</p>
+<p>late submission</p>
+<p>Total Questions</p>
+<p>14 Questions</p>
+<p>Your Score</p>
+<p>18/24</p>
+<p>Classroom Quiz - Course and Instructor Introduction, Computer Systems</p>
+<p>Revise</p>
+<p>QUESTION 1/14</p>
+<p>Which statement best describes a computer?</p>
+<p>A</p>
+<p>A machine with a screen and keyboard</p>
+<p>B</p>
+<p>A machine that stores digital files only</p>
+<p>A machine that follows changeable instructions</p>
+<p>Explanation:A computer works by following instructions that can be changed or updated.</p>
+<p>D</p>
+<p>A machine that connects to the internet</p>
+<p>CORRECT ANSWER</p>
+<p>QUESTION 2/14</p>
+<p>In a smartphone, which action is an example of input?</p>
+<p>A</p>
+<p>Showing photos on the display</p>
+<p>Saving videos into storage memory</p>
+<p>C</p>
+<p>Vibrating after a notification alert</p>
+<p>Tapping an icon on the screen</p>
+<p>Explanation:Tapping the screen sends information into the device, making it an input action.</p>
+<p>INCORRECT ANSWER</p>
+<p>QUESTION 3/14</p>
+<p>After a computer processes data, what happens next?</p>
+<p>Output is produced for the user</p>
+<p>Explanation:After processing information, the computer generates an output.</p>
+<p>B</p>
+<p>Input is collected from sensors</p>
+<p>C</p>
+<p>Storage is removed from memory</p>
+<p>D</p>
+<p>Instructions are deleted forever</p>
+<p>CORRECT ANSWER</p>
+<p>QUESTION 4/14</p>
+<p>Why is a juicer not considered a computer?</p>
+<p>A</p>
+<p>It cannot produce useful output</p>
+<p>It cannot be programmed to perform different tasks.</p>
+<p>Explanation:A juicer performs fixed actions and cannot be programmed with different instructions.</p>
+<p>C</p>
+<p>It cannot receive physical input</p>
+<p>D</p>
+<p>They are commonly used as general-purpose computers.</p>
+<p>CORRECT ANSWER</p>
+<p>QUESTION 5/14</p>
+<p>Which device is best classified as an embedded computer?</p>
+<p>Smartwatch tracking daily steps</p>
+<p>Explanation:A smartwatch is an embedded computer because it contains a dedicated computing system designed for specific tasks such as fitness tracking and notifications. In contrast, a desktop and laptop are general-purpose computers that can run many different applications, while a cloud system consists of networked servers providing computing resources rather than a computer embedded within a device.</p>
+<p>B</p>
+<p>Desktop used for video editing</p>
+<p>C</p>
+<p>Cloud system hosting websites</p>
+<p>D</p>
+<p>Laptop used for online classes</p>
+<p>CORRECT ANSWER</p>
+<p>QUESTION 6/14</p>
+<p>Which example best represents storage in an MRI system?</p>
+<p>A</p>
+<p>Radio waves entering the scanner</p>
+<p>Processors rebuilding body images</p>
+<p>Scan reports saved in records</p>
+<p>Explanation:Saving scan reports for later use is an example of storage.</p>
+<p>D</p>
+<p>Display screens showing the scan</p>
+<p>INCORRECT ANSWER</p>
+<p>QUESTION 7/14</p>
+<p>Why do data centres use thousands of computers together?</p>
+<p>A</p>
+<p>To reduce the need for electricity</p>
+<p>B</p>
+<p>To avoid using processing units</p>
+<p>To support very large workloads</p>
+<p>Explanation:Data centres combine many computers to handle massive computing tasks.</p>
+<p>D</p>
+<p>To remove all storage devices</p>
+<p>CORRECT ANSWER</p>
+<p>QUESTION 8/14</p>
+<p>Which feature makes a smartwatch different from a laptop?</p>
+<p>A smartwatch is designed mainly for limited and specific computing tasks</p>
+<p>Explanation:Smartwatches are designed for focused tasks, while laptops are general-purpose systems.</p>
+<p>B</p>
+<p>A laptop is designed mainly for limited and specific computing tasks</p>
+<p>C</p>
+<p>A smartwatch is designed mainly for storing and printing large documents</p>
+<p>D</p>
+<p>A laptop is designed mainly for tracking fitness and measuring heart rate</p>
+<p>CORRECT ANSWER</p>
+<p>QUESTION 9/14</p>
+<p>A self-checkout machine prints a receipt after scanning items. The receipt is an example of:</p>
+<p>A</p>
+<p>Input sent into the system</p>
+<p>Output produced by the system</p>
+<p>Explanation:The printed receipt is information produced for the user.</p>
+<p>C</p>
+<p>Storage kept inside memory</p>
+<p>D</p>
+<p>Processing done by hardware</p>
+<p>CORRECT ANSWER</p>
+<p>QUESTION 10/14</p>
+<p>What mainly separates a phone from a data centre?</p>
+<p>A</p>
+<p>Internet access and connectivity features</p>
+<p>Software installation and update methods</p>
+<p>C</p>
+<p>Information storage and retrieval functions</p>
+<p>Scale of operation and primary purpose</p>
+<p>Explanation:Both phones and data centres can connect to the internet, run software, and store information. The main difference is their scale of operation and primary purpose: phones are designed for individual users, while data centres handle large-scale computing and storage workloads.</p>
+<p>INCORRECT ANSWER</p>
+<p>QUESTION 11/14</p>
+<p>Mark for review</p>
+<p>Clear Selection</p>
+<p>Temporary working memory inside a computer is called ______. (3-letter abbreviation, e.g. ABC)</p>
+<p>RAM</p>
+<p>Explanation:RAM stores data temporarily while programs are running.</p>
+<p>Correct answer: RAM</p>
+<p>QUESTION 12/14</p>
+<p>Mark for review</p>
+<p>Clear Selection</p>
+<p>Long-term file storage in modern laptops is often an ______. (3-letter abbreviation, e.g. ABC)</p>
+<p>ROM</p>
+<p>Explanation:SSDs store files even when the computer is turned off.</p>
+<p>Correct answer: SSD</p>
+<p>QUESTION 13/14</p>
+<p>Mark for review</p>
+<p>Clear Selection</p>
+<p>Every computer must follow input, processing, output, and storage. (State true or false, should be in lowercase)</p>
+<p>true</p>
+<p>Explanation:All computers fit the IPOS model in some form.</p>
+<p>Correct answer: true</p>
+<p>QUESTION 14/14</p>
+<p>Mark for review</p>
+<p>Clear Selection</p>
+<p>A mechanical juicer is programmable like a computer. (State true or false)</p>
+<p>false</p>
+<p>Explanation:A juicer performs fixed actions and cannot execute new instructions.</p>
+<p>Correct answer: false</p>
+<p class='gap'></p>
+<p>Newton School</p>
+<p class='gap'></p>
+</section><hr>
+<section><h2>WHERE THESE QUESTIONS CAME FROM (sources)</h2>
+<ul>
+<li><strong>Subject assignment pages / My Assignments + Assignment Contests API</strong> — 8 assignments, 53 questions; full statement captured from each question&#x27;s playground page (read-only visit) — 53/53 texts present.</li>
+<li><strong>Lecture pages</strong> (Course Content sidebar list) — 7 of 16 lecture windows carry content: post-class question text below the video (<code>Read More</code> expanded) and in-class quiz questions via read-only views only (Revise / View Solutions / Next-Previous walk — never Attempt/Start/Submit).</li>
+<li><strong>Assessments API</strong> — 11 quiz schedules (title, window, XP earned). No question text in the API (hidden until test start).</li>
+</ul>
+<p class='gap'></p>
+</section><hr>
+<section><h2>NOT FETCHED — open these yourself</h2>
+<p>(These sit behind <code>Attempt Now</code> / <code>Start Test</code> buttons. I never click those — they consume quiz attempts. Everything else above is complete.)</p>
+<p class='gap'></p>
+<h3>Revision quizzes whose questions never became visible (6)</h3>
+<p>(quiz window closed while unattempted — try <code>Attempt Now</code> on that lecture&#x27;s Assignments tab yourself, or check My Assessments)</p>
+<ul>
+<li>Computer Networks, LAN, MAN, WAN, DNS, Packet Switching, Network Protocols, Rout ... - Revision</li>
+<li>GitHub, Remote Repository Management, GitHub Collaboration, Github Pull Requests - Revision</li>
+<li>Version Control, Repository, Git, Git Commands - Revision</li>
+<li>Number Systems, Decimal Number System, Binary Number System, Hexadecimal Number  ... - Revision</li>
+<li>Operating System, Filesystem Management, File Ownership and Permissions, PATH, O ... - Revision</li>
+<li>Operating System, Operating System Architecture, Device Management, Process Mana ... - Revision</li>
+</ul>
+<p class='gap'></p>
+<h3>Quiz Contests tab (separate MCQ tests)</h3>
+<ul>
+<li>Quiz contest questions only appear after <code>Start Test</code> (graded, consumes an attempt): open the Quiz Contests tab manually if you want these: Computer Networks, LAN, MAN, WAN, DNS, Packet Switching, Network Protocols, Rout ... - Revision, GitHub, Remote Repository Management, GitHub Collaboration, Github Pull Requests - Revision, Version Control, Repository, Git, Git Commands - Revision, Number Systems, Decimal Number System, Binary Number System, Hexadecimal Number  ... - Revision, Computer Software, Compiler, Interpreter, Number Representation &amp; Data Encoding - Revision, Operating System, Filesystem Management, File Ownership and Permissions, PATH, O ... - Revision, Operating System, Operating System Architecture, Device Management, Process Mana ... - Revision, CLI File &amp; Directory Management, CLI Package Management, CLI Flags, Options &amp; Op ... - Revision, Command-Line Interface (CLI), Terminal - Revision, Computer Hardware, Computer Software, Operating System - Revision, Course and Instructor Introduction, Computer Systems - Revision</li>
+<li>What IS captured: all assignment questions (53), all in-class quiz questions shown above, all contest ASSIGNMENT texts</li>
+</ul>
+<p class='gap'></p>
+</section><hr>
+<p>TOTALS: 53 assignment questions (16 solved), 11 quizzes, 0 questions without captured text, 7 lecture windows with content</p>
+<p class='gap'></p></body></html>
