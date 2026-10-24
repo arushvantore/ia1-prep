@@ -68,7 +68,7 @@ Custom timetable days happen (e.g. Thu 22 Oct had its own PDF). YOGA weekly lect
 Engine rule mapping: 4–5 rows → Low capacity (1 token), Sunday/holiday → High (3).
 
 ## Question-document links (all public)
-- Maths: https://arushvantore.github.io/maths-questions/ (57-page PDF inside)
+- Maths: https://arushvantore.github.io/maths-questions/ (57-page PDF inside; also lists the 4 course textbook originals shared in #m1-26 — full book PDFs archived locally at exam-prep/materials/slack-questions/sources/math/books/)
 - PSP: https://arushvantore.github.io/psp-questions/
 - SnAI: https://arushvantore.github.io/ia1-prep/SnAI-B-questions.html
 - AP: https://arushvantore.github.io/ia1-prep/AP-Robo-questions.html
