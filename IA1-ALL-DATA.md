@@ -1,15 +1,18 @@
-# IA-1 master data (all subjects) — captured 2026-10-24
+# IA-1 master data (all subjects) — captured 2026-10-24, updated 2026-10-25
 
-## Today: Saturday, 24 October 2026
+## Today: Sunday, 25 October 2026
 
 ## Exam dates (official status)
 - YOGA IA-1: 23 Oct 2026, 4:00–5:00 PM — DONE.
-- Math-1 IA-1: written paper announced 19 Oct; DATE NOT YET ANNOUNCED.
+- Math-1 IA-1: **26 October 2026 (TOMORROW)** — confirmed by student 25 Oct 11:30 AM; exact time not yet posted (contests have run 9:00–11:00 AM, assume morning slot).
 - SnAI IA-1: syllabus announced 19 Oct; DATE NOT YET ANNOUNCED.
 - PSP IA-1: syllabus announced 14 Oct; DATE NOT YET ANNOUNCED.
 - Applied Physics IA-1: syllabus announced 14 Oct; DATE NOT YET ANNOUNCED.
 - English IA-1: syllabus requested 17 Oct by class; NEVER PUBLISHED; DATE NOT YET ANNOUNCED.
-No IA-1 date exists anywhere in portal (Calendar/My Timeline/Assessments) or Slack as of today. Plan worst-case: any IA-1 can land from 27 Oct onward.
+Math date arrived at T-1 via student (no portal/Slack feed existed). Other four: no IA-1 date anywhere in portal or Slack as of today; plan worst-case from 27 Oct onward.
+
+## Maths worksheet (new 25 Oct)
+- 70 questions (60 drill + 10 mini-mock), all 6 chapters, Basic→Twist, worked answers: https://arushvantore.github.io/maths-questions/Maths-IA1-Worksheet.html (PDF: same URL, .pdf)
 
 ## MATH IA-1 syllabus (official, 19 Oct, written paper)
 - Chapter 1: Algebraic Expressions
